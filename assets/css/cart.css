@@ -1,0 +1,174 @@
+.bigtitle1{
+    padding: 0px;
+    margin: 0px auto;
+    font-size: 70px;
+    margin-bottom:5%;
+    margin-left: 12%;
+    padding-left: 3%;
+    border-left: solid darkslategray 10px;
+}
+.cart{
+    margin: 0 auto;
+    width: 100%;
+    height:200px;
+    /*background-color: thistle;*/
+    padding: 0%;
+    overflow: hidden;
+    border-top: 1px solid black;
+    padding-bottom: 1%;
+
+}
+.cart:hover{
+    background-color: lightsteelblue;
+    transition: 0.3s;
+}
+.example div{
+    text-align: center;
+}
+.totalframe{
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    /*background-color: rgb(156, 148, 148);*/
+    width: 25%;
+}
+.tpc{
+    width: 40%;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: crimson;
+    background-color: inherit;
+}
+.putbuyin{
+    /*background-color: turquoise;*/
+    height: auto;
+}
+.commotext{
+    /*background-color: turquoise;*/
+    width: 15%;
+    height: 100%;
+    float: left;
+    font-size: 25px;
+    /*padding-top: 9%;*/
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    appearance: none;
+    background-color: inherit;
+    border: none;
+}
+.hr1{
+    margin: 0;
+    padding: 0;
+}
+.amount{
+    text-align: center;
+    padding-left: 4%;
+}
+.much{
+    padding-top: 6%;
+    padding-left: 3%;
+    display: flexbox;
+    text-align: center;
+}
+.much input{
+    height: 60px;
+    width: 18%;
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 3%;
+}
+.commoname{
+    width: 20%;
+    appearance: none;
+    background-color: inherit;
+    border: none;
+    
+}
+.putcartimg{
+    /*background-color: black;*/
+    width: 21%;
+    float: left;
+    margin: 1%;
+}
+.putcartimg img{
+    width: 80%;
+}
+.check{
+    padding: 3%;
+    margin: 3%;
+    margin-top: 0;
+    margin-left: 18%;
+    width: 60%;
+    height: auto;
+    padding-top: 0;
+    background-color: rgb(208, 226, 213);
+    padding-bottom: 15%;
+    margin-bottom: 5%;
+}
+.check h1{    
+    padding-top: 5%;
+    font-size: 50px;
+    margin: 0;
+}
+.submitbut{
+    margin-top: 15%;
+    appearance: none;
+    float: right;
+    font-size: 30px;
+    background-color: lightslategray;
+    font-weight: bold;
+    border: 3px solid lightslategray;
+    color: white;
+    cursor: pointer;
+}
+.submitbut:hover{
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+    color: lightslategray;
+}
+.cancel{
+    width: 2%;
+    height: fit-content;
+    margin-top: 7.3%;
+}
+.cancel:hover{
+    background-color: gainsboro;
+}
+.gobackgoback {
+    width: 25%;
+    height: 20%;
+    text-align: center;
+    background-color: rgb(27, 185, 164);
+    border-radius: 10px;
+    border: solid 5px darkslategrey;
+    box-shadow: 0 0 10px gainsboro;
+    margin-left: 35%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 1%;
+    display: none;
+
+}
+.gobacka{
+    text-decoration: none;
+    color: inherit;
+
+}
+.canceldiv{
+    width: 3%;height: 100%;
+    float: left;
+    font-size: 25px;
+    /*padding-top: 9%;*/
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    appearance: none;
+    background-color: inherit;
+    border: none;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/images/logo2.png" width="350px">       
+            <div class="h1">
+                <div class="login">
+                    <img src="assets/images/login.png" width="50px" id="myBtn">
+                    <img src="assets/images/車.png" width="50px">
+                    <div class="logicon">LOGIN</div><div>SIGN UP</div>
+                </div>       
+                <div class="search">       
+                    <input class="search-bar" type="search" style="width:350px" >
+                    <input class="search-btn" type="button" value="搜尋">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header1">
+
+    </div>
+
+    <input type="checkbox" name="" id="sideMenu-active" />
+<div class="Menu">  
+  <nav>
+    <div class="btn2">
+        <ul>
+            <p class="p1">主頁</p>
+            <li><a href="#" class="btn1" >首　　頁</a>
+            <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
+            <li><a href="#" class="btn1" >理　　念</a>
+            <li><a href="#" class="btn1" >關於我們</a>
+            </ul>
+        <ul>
+        <p class="p1">種類</p>
+            <li><a href="#" class="btn1" >派　　對</a>
+            <li><a href="#" class="btn1" >陣　　營</a>
+            <li><a href="#" class="btn1" >策　　略</a>
+            <li><a href="#" class="btn1" >心　　機</a>
+            <li><a href="#" class="btn1" >卡　　牌</a>
+            <li><a href="#" class="btn1" >兒　　童</a>
+            <li><a href="#" class="btn1" >家　　庭</a>
+            <li><a href="#" class="btn1" >抽　　象</a>
+        </ul>
+        <ul>
+        <p class="p1">我的</p>
+            <li><a href="personalinfor.html" class="btn1" >個人資訊</a>
+            <li><a href="#" class="btn1">購 物 車</a>
+        </ul>
+    </div>
+  </nav>
+  <label for="sideMenu-active">
+     <i class="fas fa-angle-right">≡</i>
+  </label>
+</div>
+
+<div class="content" id="Box">
+    <div class="log_content" > 
+        <ul class="butframe">
+            <li><div class="log_but subbut">LogIn</div></li>
+            <li><div class="register_but subbut">Sign Up</div></li>
+        </ul>           
+        <div class="justhidden"></div>
+
+        <div class="loginframe canuseframe show">
+            <form name="form1" method="POST" action="check.jsp">
+                <div class="registerinput">
+                    <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
+                    <input type="password" placeholder="請輸入密碼" name="pwd" class="password"><br>
+                </div>            <br>            
+                <input type="submit" value="LogIn" class="butsubmit"><br>
+            </form>
+        </div>
+        <div class="registerframe canuseframe">
+            <form name="form2" method="POST" action="add.jsp">
+                <div class="registerinput">
+                    <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
+                    <input type="text" name="id" placeholder="請輸入帳號"><br>
+                    <input type="password" placeholder="請輸入密碼" name="pwd" id="" class="password"><br>
+                    <input type="text" name="phone_number" placeholder="請輸入電話"><br>
+                    <input type="text" name="e_mail" placeholder="請輸入e-mail"><br>
+                    <input type="text" name="address" placeholder="請輸入地址"><br>
+                </div><br>
+                <input type="submit" name="Submit" value="Apply" class="butsubmit">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+    <button onclick="gobacktop()" class="top" >▲</button>
+
+    <footer class="footer">
+        <div>       
+            <img class="footer1" src="assets/images/logo.png" width="150px" >
+        </div>
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="assets/js/login_switch.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>

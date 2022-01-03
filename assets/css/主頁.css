@@ -1,0 +1,14 @@
+header{
+    background-color: rgb(140, 214, 196);
+    padding: 10px;
+}
+.a{
+    padding: 2.5%;
+}
+.b{
+float:right;
+padding-top: 5%;
+}
+.c{
+float:left;
+}

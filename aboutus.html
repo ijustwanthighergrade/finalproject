@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="assets/css/aboutus.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/images/logo2.png" width="350px">       
+            <div class="h1">
+                <div class="login">
+                    <img src="assets/images/login.png" width="50px" id="myBtn">
+                    <img src="assets/images/車.png" width="50px">
+                </div>       
+                <div class="search">       
+                    <input class="search-bar" type="search" style="width:350px" >
+                    <input class="search-btn" type="button" value="搜尋">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header1">
+
+    </div>
+
+    <input type="checkbox" name="" id="sideMenu-active" />
+<div class="Menu">  
+  <nav>
+    <div class="btn2">
+        <ul>
+            <p class="p1">主頁</p>
+            <li><a href="#" class="btn1" >首　　頁</a>
+            <li><a href="#" class="btn1" >商　　品</a>
+            <li><a href="#" class="btn1" >理　　念</a>
+            <li><a href="#" class="btn1" >關於我們</a>
+            </ul>
+        <ul>
+        <p class="p1">種類</p>
+            <li><a href="#" class="btn1" >派　　對</a>
+            <li><a href="#" class="btn1" >陣　　營</a>
+            <li><a href="#" class="btn1" >策　　略</a>
+            <li><a href="#" class="btn1" >心　　機</a>
+            <li><a href="#" class="btn1" >卡　　牌</a>
+            <li><a href="#" class="btn1" >兒　　童</a>
+            <li><a href="#" class="btn1" >家　　庭</a>
+            <li><a href="#" class="btn1" >抽　　象</a>
+        </ul>
+        <ul>
+        <p class="p1">我的</p>
+            <li><a href="#" class="btn1" >個人資訊</a>
+            <li><a href="#" class="btn1">購 物 車</a>
+        </ul>
+    </div>
+  </nav>
+  <label for="sideMenu-active">
+     <i class="fas fa-angle-right">≡</i>
+  </label>
+</div>
+
+    <div class="content" id="Box">
+        <div class="log_content" > 
+            <ul class="butframe">
+                <li><div class="log_but subbut">LogIn</div></li>
+                <li><div class="register_but subbut">Sign Up</div></li>
+            </ul>           
+            <div class="justhidden"></div>
+
+            <div class="loginframe canuseframe show">
+                <form name="form1" method="POST" >
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入帳號" name="account_number"> <br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
+                    </div>            <br>            
+                    <input type="button" value="LogIn" class="butsubmit"><br>
+                </form>
+            </div>
+            <div class="registerframe canuseframe">
+                <form name="form2" method="POST" action="assets/jsp/create_null.jsp">
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
+                        <input type="text" name="account_number" placeholder="請輸入帳號"><br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
+                        <input type="text" name="phone_number" placeholder="請輸入電話"><br>
+                        <input type="text" name="e-mail" placeholder="請輸入e-mail"><br>
+                        <input type="text" name="address" placeholder="請輸入地址"><br>
+                    </div><br>
+                    <input type="submit" name="Submit" value="Apply" class="butsubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div class="about1">
+    <a id="10944122_1" onclick="s1()" href="javascript:;" class="btn3"><img src="assets/images/角色1.png" class="r1" id="r1"></a>
+    <a id="10944143_1" onclick="s2()" href="javascript:;" class="btn3"><img src="assets/images/角色1.png" class="r2" id="r2"></a>
+    <div class="about2" id="about2">
+     <div  class="form_text">我們</div>
+        <div id="10944122_2"  style="display: none;" class="text1">
+            <img src="assets/images/index1.png" >
+            
+            姓名：吳岱芸<br />學號：10944122
+        </div>
+        <div id="10944143_2" style="display: none;" class="text1">
+            <img src="assets/images/index1.png" >
+            姓名：徐紀揚<br />學號：10944143
+        </div>
+        <div id="10944222_2" style="display: none;" class="text1">
+            <img src="assets/images/index1.png" >
+            姓名:吳<br />學號
+        </div>
+        <div id="10944243_2" style="display: none;" class="text1">
+            <img src="assets/images/index1.png" >
+            姓名:徐<br />學號
+        </div>
+    
+   </div>
+    <a id="10944222_1" onclick="s3()" href="javascript:;" class="btn3"><img src="assets/images/角色1.png" class="r3" id="r3"></a>
+    <a id="10944243_1" onclick="s4()" href="javascript:;" class="btn3"><img src="assets/images/角色1.png" class="r4" id="r4"></a>
+    
+</div>
+
+<div class="form1">
+    <table >
+    <form action="" method="post" >
+        <tr  ><td colspan="2" class="form_text">表單</td></tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" name="name" value="請輸入您的姓名"></td></tr>
+        <tr>
+            <td>性別：</td>
+            <td ><input type="radio" name="sex" value="男">男
+                <input type="radio" name="sex" value="女">女</td></tr>
+        <tr>
+            <td>Email：</td>
+            <td><input name="species" type="text"  value="請輸入您的email"></td></tr>
+        <tr>
+            <td>購物體驗：</td>
+            <td ><input type="radio" name="comments" value="5">非常好
+                <input type="radio" name="comments" value="4">良好
+                <input type="radio" name="comments" value="3">普通
+                <input type="radio" name="comments" value="2">不好
+                <input type="radio" name="comments" value="1">非常差</td></tr>
+        <tr>
+            <td>留言：</td>
+            <td><textarea name="comments" rows="3" cols="50" >您的留言</textarea></td></tr>
+        <tr>
+            <td colspan="2" style="text-align:center; padding: 5% 20% 0%;"><input type="submit" style="margin: 0% 30% 0% 10%;" value="送出資料"><input type="reset" value="清除表單"></td></tr>
+    
+    </form>
+</table></div>
+
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1808.6274921416623!2d121.24096160810022!3d24.95743789600207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1641202503022!5m2!1szh-TW!2stw" class="map" allowfullscreen="" loading="lazy"></iframe>
+</div>
+    <footer class="footer">
+        <div>       
+            <img class="footer1" src="assets/images/logo.png" width="150px" >
+        </div>
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="assets/js/aboutus.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>

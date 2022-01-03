@@ -1,0 +1,29 @@
+.bgtext{
+    writing-mode: vertical-lr;
+    font-size: 200px;
+    font-weight: bold;
+    color: darkgrey;
+    position: absolute;
+    left :5%;
+    z-index: -999;
+}
+.diamondshape{
+    transform: rotate(45deg);
+    width: 200px;
+    height: 200px;
+    border: double 20px white;
+    background-color: cadetblue;
+    
+}
+.diamondshape:hover{
+    animation: rotate360 0.5s ease-in-out;
+}
+@-webkit-keyframes rotate360{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

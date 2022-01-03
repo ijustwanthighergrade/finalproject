@@ -1,0 +1,415 @@
+.commo_content {/*整個商品框*/
+  margin: 0px auto;
+  padding: 3%;
+  width: 66%;
+  z-index: 2;
+  height: auto;
+  top: 16%;
+  background-color: rgba(163, 224, 224, 0.233);
+  margin-bottom: 10%;
+  border-radius: 10px;
+}
+.commo_content h1 {
+  margin: 0px auto;
+  padding: 0px;
+  font-size: 60px;
+}
+
+.commo_pic {
+  clear: both;
+  width: 100%;
+  height: 70%;
+  background-color: rgb(81, 107, 141);
+}
+
+.commo_text {
+  height: 100%;
+  width: 100%;
+  margin-top: 5%;
+  text-indent: 1cm;
+  /*background-color: turquoise;*/
+  height: auto;
+}
+
+.backtocommo{
+  color: inherit; 
+  text-decoration: none; 
+}
+.backtocommo:hover {
+  background-color: lightblue;
+  color: rgb(68, 105, 129);
+  transition: 0.2s;
+}
+.backtocommoposition{
+  width: fit-content;
+  margin-left: 15%;
+  font-size: 25px;
+}
+
+.commo_text ul {
+  list-style-type: none;
+  display: flex;
+  /*background-color: thistle;*/
+  width: 50%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.commo_text li {
+  cursor: pointer;
+  margin: 0;
+  padding: 0px;
+  background-color: teal;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-right: 1%;
+  color: white;
+  width:30% ;
+
+}
+.commo_text li:hover{
+  background-color: rgb(0, 255, 221);
+  color: teal;
+}
+
+.commotextbut{
+  width:100% ;
+  padding: 5%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.acti2{
+  background-color: rgb(0, 255, 221);
+  color: teal;  
+  margin-right: 1%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width:90% ;
+}
+.commoform{
+  position: relative;
+  background-color: ghostwhite;
+  border-top: solid 10px rgb(154, 194, 194);
+  border-bottom: solid 10px rgb(154, 194, 194);
+  padding: 3%;
+  float: right;
+  margin-top: 5%;
+  max-width: 45%;
+  width: 100%;
+  font-size: 20px;
+  height: 480PX;
+ /* border-radius: 10px;*/
+  animation: rightleft 0.5s ease-in-out;
+  color: rgb(0, 82, 82);
+
+}
+.commoform tr{
+  padding: 4%;
+  margin: 4%;
+  height: 50px;
+}
+.howmuch input{
+  background-color: inherit;
+  border: none;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+.howmuch input:hover{
+  background-color: lavender;
+}
+.piece{
+  width: 40%;
+}
+.price{
+  font-size: 70px ;
+  font-weight: bold;
+  color: teal;
+}
+.commoform td{
+  width: 20%;
+}
+.butfunction{
+  width: 90%;
+  font-size: 25px;
+  border: none;
+  padding: 3%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.butfunction:hover{
+  background-color: rgb(213, 176, 255);
+}
+.commobut1{
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.commobut1 input{  
+  float: left;
+  width: 46%;
+  margin: 2%;
+  border-radius: 10px;
+  background-color: rgb(0, 134, 134);
+}
+.commobut2{  
+  text-align: center;
+  width: 100%;
+}
+.commobut2 input{    
+  border-radius: 10px;
+  background-color: rgb(0, 134, 134);
+  width: 96%;
+}
+.textintroframe {/*簡介frame*/
+  width: 90%;
+  height: 50%;
+  background-color: ghostwhite;
+  margin: 0;
+  padding: 5%;
+  font-size: 20px;
+  display: none;
+  animation: ease-in-out opacity 0.2s;
+}
+
+.slideshow-container {
+  max-width: 45%;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  /*margin-left: 3%;*/
+  overflow: hidden;
+  margin-top: 5%;
+  float: left;
+  height: 550PX;
+  box-shadow: #494949 0 0 10PX;
+  background-color: white;
+  animation: leftright 0.5s ease-in-out;
+}
+
+.totalcomment{
+  padding: 3%;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: teal;
+  color: white;
+}
+
+.commo_comme {
+  width: 100%;
+  height: auto;
+  background-color: cornsilk;
+}
+.customer{
+  float: left;
+  width: 75%;
+  height: 650px;
+  background-color: ghostwhite;
+  position: relative;
+  border-right: teal 2px solid;
+}
+.putcomment{
+  background-color: gray;
+  width: 100%;
+  height: 80%;
+  overflow: scroll;
+}
+.state{
+  color: rgb(0, 129, 151);
+}
+.comment1{
+  font-weight: bold;
+  width: 94%;
+  background-color: ghostwhite;
+  height: auto;
+  float: left;
+  padding: 3%;
+  border-bottom: rgb(202, 202, 202) solid 1px;
+}
+.comment1:hover{
+  background-color: lightblue;
+  transition: 0.2s;
+}
+.commentarea{
+  width: 100%;
+  /*background-color: tomato;*/
+  float: left;
+}
+.commentarea2{
+  width: 10%;
+  float: left;
+  /*background-color: rgb(129, 81, 129);*/
+}
+.commentarea1{
+  width: 95%;
+  /*background-color: tomato;*/
+  margin-left: 10.5%;
+}
+.comment2{
+  float: left;
+  margin-left: 3%;
+  font-size: 18px;
+  width: 80%;
+  /*background-color: tomato;*/
+}
+.avgstar{
+  margin-top: 10%;
+}
+.star{
+  float: right;
+  width: 18.5%;
+  padding-right: 3%;
+  padding-left: 3%;
+  /*border-left: rgb(0, 89, 148) 6px solid;*/
+  height: 650px;  
+  background-color: ghostwhite;
+
+}
+.totalstar{
+  width: 100%;
+  height: 100%;
+  clear: right;
+
+}
+.star0{
+  width: 100%;
+  text-align: center;
+  padding: 4%;
+  /*border: tomato 3px solid;*/
+  height: 50%;
+  background-color: thistle;
+}
+.star1{height: 10%;}
+
+.star2{height: 20%;}
+
+.star3{height: 30%;}
+
+.star4{height: 40%;}
+
+.star5{height: 50%;}
+
+.starframe{
+  /*background-color: tomato;*/
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  float: left;
+  
+  margin: 5px;
+}
+
+.commentform{ /*使用者表單*/
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+  left: 0;
+  padding: 2%;
+  height: 16%;
+  background-color: teal;
+  color: white;
+}
+.sucbut{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(83, 107, 161);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: solid snow 3px;
+}
+.sucbut:hover{
+  background-color: rgb(118, 176, 180);
+
+}
+.commentform1{/*userpicture*/
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  float:left;
+  
+}
+.commentform1 img{
+  width: 100%;
+}
+.commentform2{
+  width: 85%;
+  /*background-color:violet;*/
+  float:left;
+  margin-left: 2%;
+}
+.star_content{
+  width: 85%;
+}
+.total-star {
+  font-weight: 700;  
+  color: white;
+
+  font-size: 20px;
+
+}
+.username{
+  
+  font-weight: 700;  
+  color: white;
+
+  font-size: 20px;
+}
+.howmuchstar {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  background-color: #ccc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.stars {
+  color: rgb(0, 101, 109);
+  margin-left: 10px;
+}
+
+.slidebutimg {
+  height: fit-content;
+  float: left;
+  width: 50%;
+}
+
+.mySlides1 img {
+  animation: opacity 0.5s ease-in-out;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(48, 100, 107);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}

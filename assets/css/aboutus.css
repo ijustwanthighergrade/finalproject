@@ -1,0 +1,92 @@
+
+
+.about1{
+    width: 900px;
+    height: 450px;
+    margin: 0% 20% 3%;
+    padding-top:5% ;
+}
+.about2{
+    width: 50%;
+    height: 70%;
+    margin: 0% 5% 0%;
+    background-color: rgb(165, 147, 147);
+    position:absolute;
+    box-shadow: 5px 5px 10px rgba(23, 23, 54, 0.6);
+    border-radius: 2%;
+}
+.btn3{
+    padding: 0px 50px 0px;
+    margin: 0px;
+}
+.about2 img{
+    width: 40%;
+    float: left;
+    padding: 0% 1%;
+    position: relative;
+}
+
+.r1 ,.r2 ,.r3 ,.r4{
+    width: 300px;
+   margin: 50px 0px;
+   float: left;
+   top: -30%;
+   border-radius: 100%;
+   position: relative;
+}
+.r1 {
+    left: -25%;
+}
+.r2{
+    left: 60%;
+}
+.r3{
+    left: -100%;
+    top: 30%;
+}
+.r4{
+    top: -85%;
+    left: 105%;
+}
+
+.text1{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+.btn3 img:hover{
+    transform: rotate(30deg); 
+}
+
+.form1{
+    background-color: rgb(163, 163, 163);
+    width: 40%;
+    height: 50%;
+    margin: 8% 5%;
+    color: white;
+    text-align: left;
+    border: 10px  dashed rgb(163, 218, 175);
+    padding: 0% 5% 5%;
+    font-size: 24px;
+    border-radius: 3%;
+    font-weight: bold;
+    position: absolute;
+}
+.form1 td{
+    padding: 1% 0% ;
+}
+.form_text{
+    color:white; 
+    font-size: 72px; 
+    text-align: center;
+    text-shadow: 0.1em 0.1em #333;
+    font-weight: bold;
+}
+
+.map{
+    width: 600px;
+    height: 450px;
+    position: relative;
+    left: 13%;
+    margin: 5%;
+}

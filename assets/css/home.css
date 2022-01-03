@@ -1,0 +1,44 @@
+
+header{
+    background-image: url("../images/images.png") ;
+    width: 99%;
+    height: 28%;
+    padding: 10px; 
+    margin: 0px;
+}
+.b{
+float:right;
+padding-top: 5%;
+}
+.c{
+float:left;
+}
+.a img { 
+    margin: 30px 50px;
+    width: 300px; 
+    position: absolute; 
+    transition: all 1.5s; 
+} 
+.a img:first-child {
+    z-index: 1; 
+    backface-visibility: hidden; 
+   }
+   .a:hover img { 
+    transform: rotateY(180deg); 
+}
+.a1{
+    left: 0%;
+    position: absolute
+}
+.a2{
+    left: 25%;
+    position: absolute
+}
+.a3{
+    left: 50%;
+    position: absolute
+}
+.a4{
+    left: 75%;
+    position: absolute
+}
