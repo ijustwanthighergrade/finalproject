@@ -5,6 +5,8 @@
     /*background-color: gray;*/
     margin: 0 auto;
     z-index: 1;
+    
+    margin-bottom: 5%;
     position: relative;
 }
 .show {
@@ -159,4 +161,19 @@
     background-color: cadetblue;
     overflow-y: scroll;
     border-radius: 10px;
+}
+.write{
+    text-decoration: none;
+    color: inherit;
+    margin: 1%;
+    background-color: rgb(0, 155, 155);
+    padding: 1%;
+    margin-top: 3%;
+    margin-left: 5%;
+    font-weight: bold;
+    border-radius: 10%;
+    color: white;
+}
+.write:hover{
+    background-color: thistle;
 }

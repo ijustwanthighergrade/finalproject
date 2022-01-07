@@ -5,6 +5,10 @@ body{
     padding: 0px;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
+    
+    background-attachment: fixed;
+    background-image: url("../images/背景2.png");
+    background-size: 3000px;
 }
 
 .top{
@@ -22,10 +26,11 @@ body{
     opacity: 0;
     font-size: 30px;
     color: white;
+    z-index: 1999;
 }
 .top:hover{
     background-color: rgb(240, 201, 255);
-    color: rgb(255, 241, 255));
+    color: rgb(255, 241, 255);
 }
 
 .content{
@@ -44,8 +49,7 @@ body{
 }
 .justtypeset{
     width: 100%;
-    height: 12%;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 .show {
     display: block !important;
@@ -85,6 +89,11 @@ body{
     margin: 0px auto;
     font-size: 70px;
     margin-bottom:5%;
+    color: rgb(238, 238, 245);
+}
+.bigtitle:hover{
+    color: rgb(0, 204, 194);
+    transition: 0.2s ease-in-out;
 }
 .justhidden{
     width: 50%;
@@ -180,30 +189,49 @@ body{
     border-radius: 20px;
     animation: animatetop 0.5s ease-out ;
 }
-
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+/*調scrollbar*/
+::-webkit-scrollbar {
+    width: 13px;
+    height: 8px;
 }
+::-webkit-scrollbar-track {
+    border-radius: 20%px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background: rgb(218, 218, 218);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.25);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 225, 255, 0.4);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(0, 225, 255, 0.4);
 
+}
 /*header footer*/
 header img{
     cursor:pointer;
+   
+}
+header img:hover{
+    cursor:pointer;
+    filter: invert(1);
 }
 .header{  
     background-image: url("../images/1010925.jpg");
     background-position-y:20%;    
-    background-color: rgb(140, 214, 196);      
     width: 100%;
     /*box-shadow: 5px 0px 20px rgba(23, 23, 54, 0.6);*/
     height: 18%;
     z-index: 999;
     position: fixed;
+    opacity: 0.9;
 }
 .header1{      
-    background-color: rgb(0, 0, 0);      
+    background-color: rgb(177, 255, 167);      
     width: 100%;
-    height: 130px;
+    height: 168px;
     position: relative;
 }
 
@@ -229,15 +257,36 @@ header img{
     margin: 10px 0px 20px 280px;   
 }
 
+.login{     
+    margin: 10px 0px 20px 280px;   
+}
+
 footer{
     height:150px;
     width: 100%;
-    background-color: rgb(140, 214, 196);
+    background-image: url("../images/1010925.jpg");
+    background-position: 50%;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 999;
 }
 .footer1{       
     float: right;       
 }
-
+footer img{
+    width: 150px;
+    position: relative;
+    left: 40%;
+    margin-top: 1%;
+}
+footer  img:hover{
+    filter: invert(1);
+}
+.footer2{      
+    background-color: rgb(142, 255, 128);      
+    width: 100%;
+    height: 150px;
+}
 label {
     width: 40px;
     height: 45px;      
@@ -312,13 +361,13 @@ li{
     position: fixed;
     top: 6%;
     font-size: 80px;
+    color: white;
 }
 .fas:hover{
     background-color: rgb(175, 175, 175);
     transition: ease-in-out 0.4s;
     top:6%;
 }
-
 
 @-webkit-keyframes leftright {
     from {
@@ -331,10 +380,28 @@ li{
   }
   @-webkit-keyframes rightleft {
     from {
+    opacity: 0%;
       right:  -100%;
     }
   
     to {
+        opacity: 100%;
       right: 0%;
     }
   }
+  @font-face {
+      font-family: msjh;
+      src: url("../FONT/msjh.ttc");
+  }
+  @font-face {
+      font-family:setofont ;
+      src: url("../FONT/setofont/setofont.ttf");
+  }
+  @font-face {
+      font-family: taipei;
+      src: url("../FONT/TaipeiSansTCBeta-Light.ttf");
+  }
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}

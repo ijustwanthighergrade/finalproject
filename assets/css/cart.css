@@ -6,6 +6,11 @@
     margin-left: 12%;
     padding-left: 3%;
     border-left: solid darkslategray 10px;
+    color: white;
+}
+.bigtitle1:hover{
+    color: darkcyan;
+    transition: 0.2s ease-in-out;
 }
 .cart{
     margin: 0 auto;
@@ -16,6 +21,8 @@
     overflow: hidden;
     border-top: 1px solid black;
     padding-bottom: 1%;
+    float: left;
+    animation: opacity 0.5s ease-in-out;
 
 }
 .cart:hover{
@@ -108,6 +115,8 @@
     background-color: rgb(208, 226, 213);
     padding-bottom: 15%;
     margin-bottom: 5%;
+    animation: rightleft 0.5s ease-out ;
+    box-shadow: 0 0 10px gray;
 }
 .check h1{    
     padding-top: 5%;
