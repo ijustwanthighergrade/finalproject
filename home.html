@@ -4,41 +4,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主頁</title>
+    <title>首頁</title>
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
-<header>
 
-    <img src="assets/images/logo2.png" width="500px">
-    <img class="b" src="assets/images/車.png" width="100px">
-    <img class="b" src="assets/images/login.png" width="100px" >
-    
-    
-</header>
+<div class="content" id="Box">
+    <div class="log_content" > 
+        <ul class="butframe">
+            <li><div class="log_but subbut">LogIn</div></li>
+            <li><div class="register_but subbut">Sign Up</div></li>
+        </ul>           
+        <div class="justhidden"></div>
+
+        <div class="loginframe canuseframe show">
+            <form name="form1" method="POST" >
+                <div class="registerinput">
+                    <input type="text" class="account" placeholder="請輸入帳號" name="account_number"> <br>
+                    <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
+                </div>            <br>            
+                <input type="button" value="LogIn" class="butsubmit"><br>
+            </form>
+        </div>
+        <div class="registerframe canuseframe">
+            <form name="form2" method="POST" action="assets/jsp/create_null.jsp">
+                <div class="registerinput">
+                    <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
+                    <input type="text" name="account_number" placeholder="請輸入帳號"><br>
+                    <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
+                    <input type="text" name="phone_number" placeholder="請輸入電話"><br>
+                    <input type="text" name="e-mail" placeholder="請輸入e-mail"><br>
+                    <input type="text" name="address" placeholder="請輸入地址"><br>
+                </div><br>
+                <input type="submit" name="Submit" value="Apply" class="butsubmit">
+            </form>
+        </div>
+    </div>
+</div>
+
 <body>
-    <table>
-        <tr>
-    <tb  class="a">
-        <a href="file:///C:/Users/Amy/Desktop/%E8%AA%B2%E6%A5%AD/%EF%BC%92%E4%B8%8A/%E5%A4%9A%E5%AA%92%E9%AB%94/%E6%9C%9F%E6%9C%AB/%E7%B6%B2%E9%A0%81/index.html#"><div class="a1">
-        <img src="assets/images/home5.png">
-        <img src="assets/images/index1-2.png">
-    </div></a></tb>
-    <tb  class="a">
-        <a href="#"><div class="a2">
-        <img src="assets/images/home6.png">
-        <img src="assets/images/index1-2.png">
-    </div></a></tb>
-    <tb  class="a">
-        <a href="#"><div class="a3">
-        <img src="assets/images/home7.png">
-        <img src="assets/images/index1-2.png">
-    </div></a></tb>
-    <tb  class="a">
-        <a href="#"><div class="a4">
-        <img src="assets/images/home8.png">
-        <img src="assets/images/index1-2.png">
-    </div></a></tb>
-    </tr>
-    </table>
+    <header id="header">
+        <div class="header">
+            <a href="index.html"><img src="assets/images/logo2.png" width="400px"></a>       
+            <div class="h1">
+                <div class="login">
+                    <img src="assets/images/login.png"width="60px" id="myBtn">
+                    <a href="Cart.html"><img src="assets/images/車.png" width="60px"></a>
+                </div>       
+                <div class="search">       
+                    <input class="search-bar" type="search" style="width:350px" >
+                    <input class="search-btn" type="button" value="搜尋">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header1">
+
+    </div>
+
+    <input type="checkbox" name="" id="sideMenu-active" />
+<div class="Menu">  
+  <nav>
+    <div class="btn2">
+        <ul>
+            <p class="p1">主頁</p>
+            <li><a href="home.html" class="btn1" >首　　頁</a>
+            <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
+            <li><a href="concept.html" class="btn1" >理　　念</a>
+            <li><a href="aboutus.html" class="btn1" >關於我們</a>
+        </ul>
+        <ul>
+        <p class="p1">種類</p>
+            <li><a href="commoditylist_party.html" class="btn1" >派　　對</a>
+            <li><a href="commoditylist_camp.html" class="btn1" >陣　　營</a>
+            <li><a href="commoditylist_strategy.html" class="btn1" >策　　略</a>
+            <li><a href="commoditylist_mind.html" class="btn1" >心　　機</a>
+            <li><a href="commoditylist_card.html" class="btn1" >卡　　牌</a>
+            <li><a href="commoditylist_child.html" class="btn1" >兒　　童</a>
+            <li><a href="commoditylist_family.html" class="btn1" >家　　庭</a>
+            <li><a href="commoditylist_abstract.html" class="btn1" >抽　　象</a>
+        </ul>
+        <ul>
+        <p class="p1">我的</p>
+        <li><a href="personalinfor.html" class="btn1" >會員中心</a>
+            <li><a href="Cart.html" class="btn1">購 物 車</a>
+       </ul>
+    </div>
+  </nav>
+  <label for="sideMenu-active">
+     <i class="fas fa-angle-right">≡</i>
+  </label>
+</div>
+
+    <div class="content" id="Box">
+        <div class="log_content" > 
+            <ul class="butframe">
+                <li><div class="log_but subbut">LogIn</div></li>
+                <li><div class="register_but subbut">Sign Up</div></li>
+            </ul>           
+            <div class="justhidden"></div>
+
+            <div class="loginframe canuseframe show">
+                <form name="form1" method="POST" >
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入帳號" name="account_number"> <br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
+                    </div>            <br>            
+                    <input type="button" value="LogIn" class="butsubmit"><br>
+                </form>
+            </div>
+            <div class="registerframe canuseframe">
+                <form name="form2" method="POST" action="assets/jsp/create_null.jsp">
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
+                        <input type="text" name="account_number" placeholder="請輸入帳號"><br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
+                        <input type="text" name="phone_number" placeholder="請輸入電話"><br>
+                        <input type="text" name="e-mail" placeholder="請輸入e-mail"><br>
+                        <input type="text" name="address" placeholder="請輸入地址"><br>
+                    </div><br>
+                    <input type="submit" name="Submit" value="Apply" class="butsubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div id="advertising" class="c1">
+    <ul class="parent" style="left: 0;">
+        <a href="commoditiylist.html"><li class="c2"><img src="assets/images/ADV-2.jpeg"><span >前往</span></li></a>
+        <a href="commoditiylist.html"><li class="c3"><img src="assets/images/ADV-3.jpg"><span >前往</span></li></a>
+        <a href="commoditiylist.html"><li class="c4"><img src="assets/images/adv.jpg"><span >前往</span></li></a>
+    </ul>
+    <div class="btnLeft">◀</div>
+    <div class="btnRight">▶</div>
+    
+    <div class="modal">
+    <div class="dots">
+
+    <ul class="clearfix">
+        <li class="on"></li>
+        <li class="off"></li>
+        <li class="off"></li>
+     </ul>
+
+    </div>
+    </div>
+</div>
+
+<marquee class="mar">歡迎來到POTF！在這裡您可以找到閒暇時所需的快樂源泉~</marquee>
+
+<a href="commoditiylist.jsp" class="re_a"> ➭more</a>
+<div class="recommended">
+    <p class="re_title">推薦</p>
+    
+    <a href="#"><div class="goods1">
+        <div class="no"><div >no.1</div></div>
+        <img src="assets/images/1.png">
+        <img src="assets/images/2.png">
+        <div class="name-price">商品名稱<br/>價格</div>
+    </div></a>
+    <a href="#"><div class="goods2">
+        <div class="no2"><div >no.2</div></div>
+        <img src="assets/images/1.png">
+        <img src="assets/images/2.png">
+        <div class="name-price">商品名稱<br/>價格</div>
+    </div></a>
+    <a href="#"><div class="goods3">
+        <div class="no2"><div >no.3</div></div>
+        <img src="assets/images/1.png">
+        <img src="assets/images/2.png">
+        <div class="name-price">商品名稱<br/>價格</div>
+    </div></a>
+</div>
+
+<a href="commoditiylist.jsp" class="re_a"> ➭more</a>
+<div class="recommended">
+    <p class="re_title">最新</p>
+    <a href="#"><div class="goods1">
+        <img src="assets/images/1.png">
+        <img src="assets/images/2.png">
+        <div class="name-price">商品名稱<br/>價格</div>
+    </div></a>
+    <a href="#"><div class="goods2">
+        <img src="assets/images/1.png">
+        <img src="assets/images/2.png">
+        <div class="name-price">商品名稱<br/>價格</div>
+    </div></a>
+    <a href="#"><div class="goods3">
+        <img src="assets/images/1.png">
+        <img src="assets/images/2.png">
+        <div class="name-price">商品名稱<br/>價格</div>
+    </div></a>
+</div>
+    <div class="cateframe">
+        <p class="text1">分類</p>
+        <ul class="cateul">
+            <li class="cateli" > <a href="commoditylist_party.html"><img src="assets/images/1009213.jpg" alt=""> <div class="catetext">派對</div></a></li>
+            <li class="cateli"><a href="commoditylist_camp.html"><img src="assets/images/b7.jpg" alt=""><div class="catetext">陣營</div> </a></li>
+            <li class="cateli"><a href="commoditylist_strategy.html"><img src="assets/images/b2.jpg" alt=""><div class="catetext">策略</div></a></li>
+            <li class="cateli"><a href="commoditylist_mind.html"><img src="assets/images/b5.jpg" alt=""><div class="catetext">心機</div> </a></li>
+            <li class="cateli"><a href="commoditylist_card.html"><img src="assets/images/b3.jpg" alt=""><div class="catetext">卡牌</div> </a></li>
+            <li class="cateli"><a href="commoditylist_child.html"><img src="assets/images/b6.jpg" alt=""><div class="catetext">兒童</div> </a></li>
+            <li class="cateli"><a href="commoditylist_family.html"><img src="assets/images/b4.jpg" alt=""><div class="catetext">家庭</div> </a></li>
+            <li class="cateli"><a href="commoditylist_abstract.html"><img src="assets/images/b1.jpg" alt=""><div class="catetext">抽象</div> </a></li>
+        </ul>
+    </div>
+    <button onclick="gobacktop()" class="top">▲</button>
+    <footer >
+        <div style="clear: both;">     
+            <a href="https://www.facebook.com/profile.php?id=100076801934036"><img  src="assets/images/fb.png"></a>
+            <a href="https://www.instagram.com/potf_playalltogeterforever/"><img  src="assets/images/ig.png"></a>
+            <a href="mailto:s10944143@gmail.com"><img  src="assets/images/email.png"></a>
+            <p style="font-size: 25px; margin: -15px 5px;">人數：</p>
+        </div>
+    </footer>
+    <div class="footer2">
+
+    </div>
 </body>
 </html>
+
+
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="assets/js/login_switch.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+

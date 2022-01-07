@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commodity</title>
+    <link rel="stylesheet" href="assets/css/commodity.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/images/logo2.png" width="350px">       
+            <div class="h1">
+                <div class="login">
+                    <img src="assets/images/login.png" width="50px" id="myBtn">
+                    <img src="assets/images/車.png" width="50px">
+                </div>       
+                <div class="search">       
+                    <input class="search-bar" type="search" style="width:350px" >
+                    <input class="search-btn" type="button" value="搜尋">
+                </div>
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" name="" id="sideMenu-active" />
+    <div class="Menu">  
+    <nav>
+        <div class="btn2">
+            <ul>
+                <p class="p1">主頁</p>
+                <li><a href="#" class="btn1" >首　　頁</a>
+                <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
+                <li><a href="#" class="btn1" >理　　念</a>
+                <li><a href="#" class="btn1" >關於我們</a>
+                </ul>
+            <ul>
+            <p class="p1">種類</p>
+                <li><a href="#" class="btn1" >派　　對</a>
+                <li><a href="#" class="btn1" >陣　　營</a>
+                <li><a href="#" class="btn1" >策　　略</a>
+                <li><a href="#" class="btn1" >心　　機</a>
+                <li><a href="#" class="btn1" >卡　　牌</a>
+                <li><a href="#" class="btn1" >兒　　童</a>
+                <li><a href="#" class="btn1" >家　　庭</a>
+                <li><a href="#" class="btn1" >抽　　象</a>
+            </ul>
+            <ul>
+            <p class="p1">我的</p>
+                <li><a href="personalinfor.html" class="btn1" >個人資訊</a>
+                <li><a href="#" class="btn1">購 物 車</a>
+            </ul>
+        </div>
+    </nav>
+    <label for="sideMenu-active">
+        <i class="fas fa-angle-right">≡</i>
+    </label>
+    </div>
+    <div class="content" id="Box">
+        <div class="log_content" > 
+            <ul class="butframe">
+                <li><div class="log_but subbut">LogIn</div></li>
+                <li><div class="register_but subbut">Sign Up</div></li>
+            </ul>           
+            <div class="justhidden"></div>
+
+            <div class="loginframe canuseframe show">
+                <form name="form1" method="POST" action="check.jsp">
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="pwd"><br>
+                    </div>            <br>            
+                    <input type="submit" value="LogIn" class="butsubmit"><br>
+                </form>
+            </div>
+            <div class="registerframe canuseframe">
+                <form name="form2" method="POST" action="add.jsp">
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
+                        <input type="text" name="id" placeholder="請輸入帳號"><br>
+                        <input type="password" placeholder="請輸入密碼" name="pwd" id="" class="password"><br>
+                        <input type="text" name="phone_number" placeholder="請輸入電話"><br>
+                        <input type="text" name="e-mail" placeholder="請輸入e-mail"><br>
+                        <input type="text" name="address" placeholder="請輸入地址"><br>
+                    </div><br>
+                    <input type="submit" name="Submit" value="Apply" class="butsubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="justtypeset"></div>
+
+    <!--從此為主體-->
+    <div class="commo_content">
+           <h1>Commodity name</h1> <!--引入商品名-->
+        
+        <div class="commo_pic">
+            <div class="slideshow-container"><!--引入圖片-->
+                <div class="mySlides1">
+                <img src="assets/images/game/卡牌/榮耀之城.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides1">
+                <img src="assets/images/game/策略/詭影尋蹤.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides1">
+                <img src="assets/images/game/抽象/格格不入.jfif" style="width:100%"> 
+                </div>
+                <div class="mySlides1">
+                    <img src="assets/images/game/心機/阿瓦隆.webp" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+                
+                <div class="slidebutimg">
+                    <button class="w3-button demo" onclick="imgclick(1)">1</button> 
+                    <button class="w3-button demo" onclick="imgclick(2)">2</button> 
+                    <button class="w3-button demo" onclick="imgclick(3)">3</button> 
+                </div>
+        </div>
+
+        
+        <div class="commo_text">
+            <ul>
+                <li class="commotextbut"><h2>商品簡介</h2></li>
+                <li class="commotextbut"><h2>產品說明</h2></li>
+            </ul>
+            
+            <div class="textintroframe show">
+            </div>
+            <div class="textintroframe">
+            </div>
+        </div>
+        <div class="commo_intro">
+        
+        
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+        
+      
+
+    <footer class="footer">
+        <div>       
+            <img class="footer1" src="assets/images/logo.png" width="150px" >
+        </div>
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="assets/js/login_switch.js"></script>
+<script type="text/javascript" src="assets/js/commodity.js"></script>
+
+

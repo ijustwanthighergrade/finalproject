@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
     <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/conept.css">
+    <link rel="stylesheet" href="assets/css/concept.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header">
-            <img src="assets/images/logo2.png" width="350px">       
+            <a href="index.html"><img src="assets/images/logo2.png" width="400px"></a>       
             <div class="h1">
                 <div class="login">
-                    <img src="assets/images/login.png" width="50px" id="myBtn">
-                    <img src="assets/images/車.png" width="50px">
-                    <div class="logicon">LOGIN</div><div>SIGN UP</div>
+                    <img src="assets/images/login.png"width="60px" id="myBtn">
+                    <a href="Cart.html"><img src="assets/images/車.png" width="60px"></a>
                 </div>       
                 <div class="search">       
                     <input class="search-bar" type="search" style="width:350px" >
@@ -35,27 +34,27 @@
     <div class="btn2">
         <ul>
             <p class="p1">主頁</p>
-            <li><a href="#" class="btn1" >首　　頁</a>
+            <li><a href="home.html" class="btn1" >首　　頁</a>
             <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
-            <li><a href="#" class="btn1" >理　　念</a>
-            <li><a href="#" class="btn1" >關於我們</a>
-            </ul>
+            <li><a href="" class="btn1" >理　　念</a>
+            <li><a href="aboutus.html" class="btn1" >關於我們</a>
+        </ul>
         <ul>
         <p class="p1">種類</p>
-            <li><a href="#" class="btn1" >派　　對</a>
-            <li><a href="#" class="btn1" >陣　　營</a>
-            <li><a href="#" class="btn1" >策　　略</a>
-            <li><a href="#" class="btn1" >心　　機</a>
-            <li><a href="#" class="btn1" >卡　　牌</a>
-            <li><a href="#" class="btn1" >兒　　童</a>
-            <li><a href="#" class="btn1" >家　　庭</a>
-            <li><a href="#" class="btn1" >抽　　象</a>
+            <li><a href="commoditylist_party.html" class="btn1" >派　　對</a>
+            <li><a href="commoditylist_camp.html" class="btn1" >陣　　營</a>
+            <li><a href="commoditylist_strategy.html" class="btn1" >策　　略</a>
+            <li><a href="commoditylist_mind.html" class="btn1" >心　　機</a>
+            <li><a href="commoditylist_card.html" class="btn1" >卡　　牌</a>
+            <li><a href="commoditylist_child.html" class="btn1" >兒　　童</a>
+            <li><a href="commoditylist_family.html" class="btn1" >家　　庭</a>
+            <li><a href="commoditylist_abstract.html" class="btn1" >抽　　象</a>
         </ul>
         <ul>
         <p class="p1">我的</p>
-            <li><a href="personalinfor.html" class="btn1" >個人資訊</a>
-            <li><a href="#" class="btn1">購 物 車</a>
-        </ul>
+        <li><a href="personalinfor.html" class="btn1" >會員中心</a>
+            <li><a href="Cart.html" class="btn1">購 物 車</a>
+       </ul>
     </div>
   </nav>
   <label for="sideMenu-active">
@@ -63,49 +62,85 @@
   </label>
 </div>
 
-    <div class="content" id="Box">
-        <div class="log_content" > 
-            <ul class="butframe">
-                <li><div class="log_but subbut">LogIn</div></li>
-                <li><div class="register_but subbut">Sign Up</div></li>
-            </ul>           
-            <div class="justhidden"></div>
+<div class="content" id="Box">
+    <div class="log_content" > 
+        <ul class="butframe">
+            <li><div class="log_but subbut">LogIn</div></li>
+            <li><div class="register_but subbut">Sign Up</div></li>
+        </ul>           
+        <div class="justhidden"></div>
 
-            <div class="loginframe canuseframe show">
-                <form name="form1" method="POST" >
-                    <div class="registerinput">
-                        <input type="text" class="account" placeholder="請輸入帳號" name="account_number"> <br>
-                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
-                    </div>            <br>            
-                    <input type="button" value="LogIn" class="butsubmit"><br>
-                </form>
-            </div>
-            <div class="registerframe canuseframe">
-                <form name="form2" method="POST" action="assets/jsp/create_null.jsp">
-                    <div class="registerinput">
-                        <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
-                        <input type="text" name="account_number" placeholder="請輸入帳號"><br>
-                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
-                        <input type="text" name="phone_number" placeholder="請輸入電話"><br>
-                        <input type="text" name="e-mail" placeholder="請輸入e-mail"><br>
-                        <input type="text" name="address" placeholder="請輸入地址"><br>
-                    </div><br>
-                    <input type="submit" name="Submit" value="Apply" class="butsubmit">
-                </form>
-            </div>
+        <div class="loginframe canuseframe show">
+            <form name="form1" method="POST" action="check.jsp">
+                <div class="registerinput">
+                    <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
+                    <input type="password" placeholder="請輸入密碼" name="pwd" class="password"><br>
+                </div>            <br>            
+                <input type="submit" value="LogIn" class="butsubmit"><br>
+            </form>
+        </div>
+        <div class="registerframe canuseframe">
+            <form name="form2" method="POST" action="add.jsp">
+                <div class="registerinput">
+                    <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
+                    <input type="text" name="id" placeholder="請輸入帳號"><br>
+                    <input type="password" placeholder="請輸入密碼" name="pwd" id="" class="password"><br>
+                    <input type="text" name="phone_number" placeholder="請輸入電話"><br>
+                    <input type="text" name="e_mail" placeholder="請輸入e-mail"><br>
+                    <input type="text" name="address" placeholder="請輸入地址"><br>
+                </div><br>
+                <input type="submit" name="Submit" value="Apply" class="butsubmit">
+            </form>
         </div>
     </div>
+</div>
 
-    <div class="justtypeset"></div>
-    <div class="bgtext">Concept</div>
-    <div class="diamondshape "><h1></h1></div>
 
+<div class="concept">
+    <div class="title">理念</div>
+        <div class="text-concept">
+    　　本組專案主題為桌遊，桌遊作為一種娛樂活動受到眾人愛戴，一款好的桌遊甚至可以風靡全球，舉凡UNO就是一款大眾耳熟能詳的遊戲。
+    <br/>　　而桌遊種類之廣泛，不只有能讓家人朋友之間聯絡感情的小遊戲，其中也不乏於許多需要玩家有小心機來取勝的遊戲，因此我們的LOGO樣式也取用了有些狡詐的臉做為主要設計。而在這多種類的桌遊中雖有部分可單人遊玩，但大部分遊戲的共同點還是需要大家一同遊玩，因而LOGO取名為POTF (Play All Together Forever)，O為all的發音部分並不是打錯，希望大家在遊玩的過程中雖然可能會有些許小插曲，但仍舊能夠開心地一起玩耍。</div>
+    <div class="diamondshape "><img src="assets/images/logo2.png"></div>
+</div>
+<div class="origin">
+    <div class="title">桌遊分類</div>
+    <div class="text-origin">
+        <ul>派對遊戲(Party Games)
+        <li>　　派對遊戲是適合多人一起遊玩，遊戲過程著重在互動，規則簡單易上手，營造熱鬧歡樂的氣氛，玩起來有趣就好，適用各種聚會場合或是剛認識的朋友一起遊玩。 </li>
+    陣營遊戲(Camp Games)
+        <li>　　這類桌遊大部分都會有三個陣營，通常是好人陣營、壞人陣營及中立陣營。遊戲剛開始時大多不知道自己的夥伴有誰，所以要在遊戲進行中邊探索邊觀察，找到同伴，並且合作獲得最後的勝利！
+        但有聽過「不怕神一般的對手，只怕豬一般的隊友」？遊戲中讓你出局的人往往就是你的隊友！</li>
+        策略遊戲(Strategy Games)
+      <li>  　　這類遊戲最大的特色就是要不斷思考和遊戲時間偏長，但規則普遍比較完善，玩家在遊戲規則的範圍內，可以盡情發揮自己的智慧深入研究遊戲技巧和運用策略，非常適合喜歡動腦的人玩。</li>
+      心機遊戲(Crafty Games)
+      <li>　　此類桌遊就是比誰的心機重，單純的你千萬別相信任何人，就算是自己的愛人也一樣！在這場戰爭中，你唯一能相信的只有自己，努力踏著別人的屍體成為最後贏家吧，並且「失去所有朋友」！</li>
+      卡牌遊戲(Card Games)
+      <li>　　此類遊戲的優點是像撲克牌體積較小、方便隨身攜帶，適合出門旅遊的人隨時能玩！</li>
+      兒童遊戲(Children’s Games)
+      <li>　　適合兒童的遊戲，一般配件比較可愛，規則簡單，還能間接訓練兒童的反應力、記憶力等等。同時也適用於各種親子聚會的場合，老少皆宜。</li>
+      家庭遊戲(Family Games)
+      <li>　　這類游戲的特點是規則相對簡單，策略度和競爭性不是很高，鮮有爾虞我詐的成分，適合家庭聚會的時間可以闔家一起玩的遊戲，不論是大人小孩都能樂在其中。</li>
+      抽象遊戲(Abstract Games)
+      <li>　　這類遊戲沒有主題或主題不突出，並且完全沒有劇情，用於遊戲的配件也較為抽象，遊戲的機制相對簡單，遊戲中沒有隱藏信息，運氣成分較少。</li>
+    </ul>
+    <img src="assets/images/logo2.png"></li>
+    </div>
+</div>
+
+    <button onclick="gobacktop()" class="top" >▲</button>
 
     <footer class="footer">
-        <div>       
-            <img class="footer1" src="assets/images/logo.png" width="150px" >
-        </div>
+        <div style="clear: both;">     
+            <a href="https://www.facebook.com/profile.php?id=100076801934036"><img  src="assets/images/fb.png"></a>
+            <a href="https://www.instagram.com/potf_playalltogeterforever/"><img  src="assets/images/ig.png"></a>
+            <a href="mailto:s10944143@gmail.com"><img  src="assets/images/email.png"></a>
+            <p style="font-size: 25px; margin: -15px 5px;">人數：</p>
+      </div>
     </footer>
+    <div class="footer2">
+
+    </div>
 </body>
 </html>
 <script type="text/javascript" src="assets/js/login_switch.js"></script>

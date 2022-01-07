@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +11,13 @@
     <link rel="stylesheet" href="assets/css/commodity.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header">
-            <img src="assets/images/logo2.png" width="350px">       
+            <a href="index.html"><img src="assets/images/logo2.png" width="400px"></a>       
             <div class="h1">
                 <div class="login">
-                    <img src="assets/images/login.png" width="50px" id="myBtn">
-                    <img src="assets/images/車.png" width="50px">
+                    <img src="assets/images/login.png"width="60px" id="myBtn">
+                    <a href="Cart.html"><img src="assets/images/車.png" width="60px"></a>
                 </div>       
                 <div class="search">       
                     <input class="search-bar" type="search" style="width:350px" >
@@ -25,6 +26,9 @@
             </div>
         </div>
     </header>
+    <div class="header1">
+
+    </div>
 
     <input type="checkbox" name="" id="sideMenu-active" />
     <div class="Menu">  
@@ -32,27 +36,27 @@
         <div class="btn2">
             <ul>
                 <p class="p1">主頁</p>
-                <li><a href="#" class="btn1" >首　　頁</a>
+                <li><a href="home.html" class="btn1" >首　　頁</a>
                 <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
-                <li><a href="#" class="btn1" >理　　念</a>
-                <li><a href="#" class="btn1" >關於我們</a>
-                </ul>
+                <li><a href="concept.html" class="btn1" >理　　念</a>
+                <li><a href="aboutus.html" class="btn1" >關於我們</a>
+            </ul>
             <ul>
             <p class="p1">種類</p>
-                <li><a href="#" class="btn1" >派　　對</a>
-                <li><a href="#" class="btn1" >陣　　營</a>
-                <li><a href="#" class="btn1" >策　　略</a>
-                <li><a href="#" class="btn1" >心　　機</a>
-                <li><a href="#" class="btn1" >卡　　牌</a>
-                <li><a href="#" class="btn1" >兒　　童</a>
-                <li><a href="#" class="btn1" >家　　庭</a>
-                <li><a href="#" class="btn1" >抽　　象</a>
+                <li><a href="commoditylist_party.html" class="btn1" >派　　對</a>
+                <li><a href="commoditylist_camp.html" class="btn1" >陣　　營</a>
+                <li><a href="commoditylist_strategy.html" class="btn1" >策　　略</a>
+                <li><a href="commoditylist_mind.html" class="btn1" >心　　機</a>
+                <li><a href="commoditylist_card.html" class="btn1" >卡　　牌</a>
+                <li><a href="commoditylist_child.html" class="btn1" >兒　　童</a>
+                <li><a href="commoditylist_family.html" class="btn1" >家　　庭</a>
+                <li><a href="commoditylist_abstract.html" class="btn1" >抽　　象</a>
             </ul>
             <ul>
             <p class="p1">我的</p>
-                <li><a href="personalinfor.html" class="btn1" >個人資訊</a>
-                <li><a href="#" class="btn1">購 物 車</a>
-            </ul>
+            <li><a href="personalinfor.html" class="btn1" >會員中心</a>
+                <li><a href="Cart.html" class="btn1">購 物 車</a>
+           </ul>
         </div>
     </nav>
     <label for="sideMenu-active">
@@ -71,8 +75,8 @@
             <div class="loginframe canuseframe show">
                 <form name="form1" method="POST" action="check.jsp">
                     <div class="registerinput">
-                        <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
-                        <input type="password" placeholder="請輸入密碼" name="pwd" class="password"><br>
+                        <input type="text" class="account" placeholder="請輸入帳號" name="account_number"> <br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
                     </div>            <br>            
                     <input type="submit" value="LogIn" class="butsubmit"><br>
                 </form>
@@ -98,134 +102,70 @@
             <ul>
                 <li><div class="inforbut">個人資料</div> </li>
                 <li><div class="inforbut">修改資料</div> </li>
-                <li><div class="inforbut">訂單紀錄</div> </li>
+                <li><div class="inforbut">購物紀錄</div> </li>
                 <li><div class="inforbut">您的評論</div> </li>
                 <li><div class="inforbut">您的收藏</div> </li>
             </ul>
         </div>
-    
+       
         <h1 class="bigtitle">會員中心</h1>
         <div class="inforframe show">
             <h1 class="subtitle">個人資料</h1>
-            <div class="myinforimg"><img style="width:100%;height: 100%;" src="assets/images/1640940043258.jpeg" alt=""></div> <!--引入個人圖片-->
+            <div class="myinforimg"><img src="assets/images/12.jpg" alt=""></div> <!--引入個人圖片-->
             <div class="myinfortext">
-                <div>姓名</div><p>XXX</p><br><br> <!--p是拿來引入資料的框-->
-                <div>帳號</div><p>P123</p><br><br>
-                <div>密碼</div><p>IDONTKNOW</p><br><br>
-                <div>電話</div><p>09-08000000</p><br><br>
-                <div>e-mail</div><p>P123@gmail.com</p><br><br>
-                <div>地址</div><p>桃園市xx區xx路xx號xx樓</p><br>
+                <div>姓名</div><p>王阿明</p><br><br> <!--p是拿來引入資料的框-->
+                <div>帳號</div><p>ming123</p><br><br>
+                <div>密碼</div><p>idontknow</p><br><br>
+                <div>電話</div><p>0908222222</p><br><br>
+                <div>e-mail</div><p>ming123@yahoo.com</p><br><br>
+                <div>地址</div><p>320桃園市中壢區中北路200號</p><br>
             </div>
         </div>
         <div class="inforframe">
             <h1 class="subtitle">修改資料</h1><!--placeholder需要引入使用者資訊-->
-            <div class="myinforimg"><img style="width:100%;;height: 100%;" src="assets/images/1640940043258.jpeg" alt=""></div><!--引入個人圖片-->
-            <form action="update.jsp" method="POST">
-                <div class="myinfortext">
-                    <div>姓名</div><input class="inforinput" type="text" placeholder="請輸入姓名" name="name"><br><br>
-                    <div>帳號</div><input type="text" class="inforinput" name="id" placeholder="請輸入帳號"><br><br>
-                    <div>密碼</div><input type="password" class="inforinput" placeholder="請輸入密碼" name="pwd" id=""><br><br>
-                    <div>電話</div><input type="text" class="inforinput" name="phone_number" placeholder="請輸入電話"><br><br>
-                    <div>e-mail</div><input type="text" class="inforinput" name="e_mail" placeholder="請輸入e-mail"><br><br>
-                    <div>地址</div><input type="text" class="inforinput" name="address" placeholder="請輸入地址"><br><br>
-                    <input type="submit" name="Submit" value="修改" class="butchange">
-                </div>
-            </form>
+            <div class="myinforimg"><img src="assets/images/stone.jpg" alt=""></div>
+			<form action="update.jsp" method="POST">
+            <div class="myinfortext">
+                <div>姓名</div><input class="inforinput" type="text" placeholder="請輸入姓名" name="name"><br><br>
+                <div>帳號</div><input type="text" class="inforinput" name="id" placeholder="請輸入帳號"><br><br>
+                <div>密碼</div><input type="password" class="inforinput" placeholder="請輸入密碼" name="pwd" id=""><br><br>
+                <div>電話</div><input type="text" class="inforinput" name="phone_number" placeholder="請輸入電話"><br><br>
+                <div>e-mail</div><input type="text" class="inforinput" name="e_mail" placeholder="請輸入e-mail"><br><br>
+                <div>地址</div><input type="text" class="inforinput" name="address" placeholder="請輸入地址"><br><br>
+                <input type="submit" name="Submit" value="修改" class="butchange">
+            </div>
+			</form>
         </div>
         <div class="inforframe">
-            <h1 class="subtitle">訂單紀錄</h1>
-            <div id="putbuylist" class="setshowframe"> <!--以comment1的DIV為單位-->
-                <div class="comment1">
-                    <div class="order">
-                        <div>&nbsp;</div> 
-                        <div>編號 ｜&nbsp; ${item.numorder}</div> 
-                        <div>日期 ｜&nbsp; ${item.orderdate} </div><div>狀態 ｜&nbsp; <span class="state">${item.state}</span></div> <br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div><div class="comment1">
-                    <div class="order">
-                        <div>&nbsp;</div> 
-                        <div>編號 ｜&nbsp; ${item.numorder}</div> 
-                        <div>日期 ｜&nbsp; ${item.orderdate} </div><div>狀態 ｜&nbsp; <span class="state">${item.state}</span></div> <br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div><div class="comment1">
-                    <div class="order">
-                        <div>&nbsp;</div> 
-                        <div>編號 ｜&nbsp; ${item.numorder}</div> 
-                        <div>日期 ｜&nbsp; ${item.orderdate} </div><div>狀態 ｜&nbsp; <span class="state">${item.state}</span></div> <br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div><div class="comment1">
-                    <div class="order">
-                        <div>&nbsp;</div> 
-                        <div>編號 ｜&nbsp; ${item.numorder}</div> 
-                        <div>日期 ｜&nbsp; ${item.orderdate} </div><div>狀態 ｜&nbsp; <span class="state">${item.state}</span></div> <br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div>
-               
-            </div>
+            <h1 class="subtitle">購物清單</h1>
+            <div id="putbuylist" class="setshowframe"></div>
         </div>
         <div class="inforframe">
             <h1 class="subtitle">您的評論</h1>
-            <div id="puthistorycomment" class="setshowframe">
-
-            </div>
+            <div id="puthistorycomment" class="setshowframe"></div>
+			<a href="board.jsp" class="write">寫寫留言</a><p>
+			
         </div>
         <div class="inforframe">
             <h1 class="subtitle">您的收藏</h1>
-            <div id="putlovecommodity" class="setshowframe">
-                <div class="comment1">
-                    <div class="commentform1"><img src="assets/images/${item.img}" alt=""></div><!--引入商品圖片-->
-                    <div class="comment2">
-                    
-                        <div>&nbsp;</div> <div>品名 ｜&nbsp; ${item.title} </div><div>價格 ｜&nbsp; $ ${item.price}</div> 
-                        <div class="commentarea"><span class="commentarea2" >類型 ｜</span><div class="commentarea1" >${item.characteristic}</div> </div><br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div>
-                <div class="comment1">
-                    <div class="commentform1"><img src="assets/images/${item.img}" alt=""></div><!--引入商品圖片-->
-                    <div class="comment2">
-                    
-                        <div>&nbsp;</div> <div>品名 ｜&nbsp; ${item.title} </div><div>價格 ｜&nbsp; $ ${item.price}</div> 
-                        <div class="commentarea"><span class="commentarea2" >類型 ｜</span><div class="commentarea1" >${item.characteristic}</div> </div><br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div>
-                
-                <div class="comment1">
-                    <div class="commentform1"><img src="assets/images/${item.img}" alt=""></div><!--引入商品圖片-->
-                    <div class="comment2">
-                    
-                        <div>&nbsp;</div> <div>品名 ｜&nbsp; ${item.title} </div><div>價格 ｜&nbsp; $ ${item.price}</div> 
-                        <div class="commentarea"><span class="commentarea2" >類型 ｜</span><div class="commentarea1" >${item.characteristic}</div> </div><br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div>
-                <div class="comment1">
-                    <div class="commentform1"><img src="assets/images/${item.img}" alt=""></div><!--引入商品圖片-->
-                    <div class="comment2">
-                    
-                        <div>&nbsp;</div> <div>品名 ｜&nbsp; ${item.title} </div><div>價格 ｜&nbsp; $ ${item.price}</div> 
-                        <div class="commentarea"><span class="commentarea2" >類型 ｜</span><div class="commentarea1" >${item.characteristic}</div> </div><br>
-                    </div>
-                    <div style="clear:both;"></div>
-                </div>
-            </div>
+            <div id="putlovecommodity" class="setshowframe"></div>
         </div>
     </div>
-
     <button onclick="gobacktop()" class="top" >▲</button>
-
     <footer class="footer">
-        <div>       
-            <img class="footer1" src="assets/images/logo.png" width="150px" >
-        </div>
+        <div style="clear: both;">     
+            <a href="https://www.facebook.com/profile.php?id=100076801934036"><img  src="assets/images/fb.png"></a>
+            <a href="https://www.instagram.com/potf_playalltogeterforever/"><img  src="assets/images/ig.png"></a>
+            <a href="mailto:s10944143@gmail.com"><img  src="assets/images/email.png"></a>
+            <p style="font-size: 25px; margin: -15px 5px;">人數：</p>
+      </div>
     </footer>
+    <div class="footer2">
+
+    </div>
 </body>
 </html>
 <script type="text/javascript" src="assets/js/login_switch.js"></script>
 <script type="text/javascript" src="assets/js/personalinfor.js"></script>
 <script type="text/javascript" src="assets/js/infroprint.js"></script>
+

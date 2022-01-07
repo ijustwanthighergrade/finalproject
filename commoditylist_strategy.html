@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header">
-            <img src="assets/images/logo2.png" width="350px">
+            <a href="index.html"><img src="assets/images/logo2.png" width="400px"></a>       
             <div class="h1">
                 <div class="login">
-                    <img src="assets/images/login.png" width="50px" id="myBtn">
-                    <a href="Cart.html"><img src="assets/images/車.png" width="50px"></a>
+                    <img src="assets/images/login.png"width="60px" id="myBtn">
+                    <a href="Cart.html"><img src="assets/images/車.png" width="60px"></a>
                 </div>
                 <div class="search">
                     <input class="search-bar" type="search" style="width:350px">
@@ -27,33 +27,36 @@
             </div>
         </div>
     </header>
+    <div class="header1">
+
+    </div>
     <input type="checkbox" name="" id="sideMenu-active" />
     <div class="Menu">
         <nav>
             <div class="btn2">
                 <ul>
                     <p class="p1">主頁</p>
-                    <li><a href="#" class="btn1">首　　頁</a>
-                    <li><a href="commoditiylist.html" class="btn1">商　　品</a>
-                    <li><a href="#" class="btn1">理　　念</a>
-                    <li><a href="#" class="btn1">關於我們</a>
+                    <li><a href="home.html" class="btn1" >首　　頁</a>
+                    <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
+                    <li><a href="concept.html" class="btn1" >理　　念</a>
+                    <li><a href="aboutus.html" class="btn1" >關於我們</a>
                 </ul>
                 <ul>
-                    <p class="p1">種類</p>
-                    <li><a href="#" class="btn1">派　　對</a>
-                    <li><a href="#" class="btn1">陣　　營</a>
-                    <li><a href="#" class="btn1">策　　略</a>
-                    <li><a href="#" class="btn1">心　　機</a>
-                    <li><a href="#" class="btn1">卡　　牌</a>
-                    <li><a href="#" class="btn1">兒　　童</a>
-                    <li><a href="#" class="btn1">家　　庭</a>
-                    <li><a href="#" class="btn1">抽　　象</a>
+                <p class="p1">種類</p>
+                    <li><a href="commoditylist_party.html" class="btn1" >派　　對</a>
+                    <li><a href="commoditylist_camp.html" class="btn1" >陣　　營</a>
+                    <li><a href="commoditylist_strategy.html" class="btn1" >策　　略</a>
+                    <li><a href="commoditylist_mind.html" class="btn1" >心　　機</a>
+                    <li><a href="commoditylist_card.html" class="btn1" >卡　　牌</a>
+                    <li><a href="commoditylist_child.html" class="btn1" >兒　　童</a>
+                    <li><a href="commoditylist_family.html" class="btn1" >家　　庭</a>
+                    <li><a href="commoditylist_abstract.html" class="btn1" >抽　　象</a>
                 </ul>
                 <ul>
-                    <p class="p1">我的</p>
-                    <li><a href="personalinfor.html" class="btn1">個人資訊</a>
+                <p class="p1">我的</p>
+                <li><a href="personalinfor.html" class="btn1" >會員中心</a>
                     <li><a href="Cart.html" class="btn1">購 物 車</a>
-                </ul>
+               </ul>
             </div>
         </nav>
         <label for="sideMenu-active">
@@ -69,7 +72,7 @@
             <div class="justhidden"></div>
 
             <div class="loginframe canuseframe show">
-                <form name="form1" method="POST" action="check.jsp">
+                <form name="form1" method="POST" action="check.html">
                     <div class="registerinput">
                         <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
                         <input type="password" placeholder="請輸入密碼" name="pwd" class="password"><br>
@@ -78,7 +81,7 @@
                 </form>
             </div>
             <div class="registerframe canuseframe">
-                <form name="form2" method="POST" action="add.jsp">
+                <form name="form2" method="POST" action="add.html">
                     <div class="registerinput">
                         <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
                         <input type="text" name="id" placeholder="請輸入帳號"><br>
@@ -122,66 +125,7 @@
     </div>
 
     <div class="putcommodity" id="itemList">
-        <div class="commodity_1">
-            <div class="putimgin">
-                <img src="assets/images/${item.img}" alt="">
-            </div>
-            <a href="${item.buynow}"><div class="buy cobut">Buy Now</div></a>
-            <a href="${item.herfcommo}"><div class="detail cobut">Details</div></a>
-            <div class="commoditytext">
-                <h2>${item.title}<br><p class="chara"><a href="">#${item.characteristic}</a></p> </h2><br>
-                <h3>$${item.price}</<h3>
-                <input type="button" class="tocart" value="Cart">
-            </div>
-        </div>
-        <div class="commodity_1">
-            <div class="putimgin">
-                <img src="assets/images/${item.img}" alt="">
-            </div>
-            <a href="${item.buynow}"><div class="buy cobut">Buy Now</div></a>
-            <a href="${item.herfcommo}"><div class="detail cobut">Details</div></a>
-            <div class="commoditytext">
-                <h2>${item.title}<br><p class="chara"><a href="">#${item.characteristic}</a></p> </h2><br>
-                <h3>$${item.price}</<h3>
-                <input type="button" class="tocart" value="Cart">
-            </div>
-        </div>
-        <div class="commodity_1">
-            <div class="putimgin">
-                <img src="assets/images/${item.img}" alt="">
-            </div>
-            <a href="${item.buynow}"><div class="buy cobut">Buy Now</div></a>
-            <a href="${item.herfcommo}"><div class="detail cobut">Details</div></a>
-            <div class="commoditytext">
-                <h2>${item.title}<br><p class="chara"><a href="">#${item.characteristic}</a></p> </h2><br>
-                <h3>$${item.price}</<h3>
-                <input type="button" class="tocart" value="Cart">
-            </div>
-        </div>
-        <div class="commodity_1">
-            <div class="putimgin">
-                <img src="assets/images/${item.img}" alt="">
-            </div>
-            <a href="${item.buynow}"><div class="buy cobut">Buy Now</div></a>
-            <a href="${item.herfcommo}"><div class="detail cobut">Details</div></a>
-            <div class="commoditytext">
-                <h2>${item.title}<br><p class="chara"><a href="">#${item.characteristic}</a></p> </h2><br>
-                <h3>$${item.price}</<h3>
-                <input type="button" class="tocart" value="Cart">
-            </div>
-        </div>
-        <div class="commodity_1">
-            <div class="putimgin">
-                <img src="assets/images/${item.img}" alt="">
-            </div>
-            <a href="${item.buynow}"><div class="buy cobut">Buy Now</div></a>
-            <a href="${item.herfcommo}"><div class="detail cobut">Details</div></a>
-            <div class="commoditytext">
-                <h2>${item.title}<br><p class="chara"><a href="">#${item.characteristic}</a></p> </h2><br>
-                <h3>$${item.price}</<h3>
-                <input type="button" class="tocart" value="Cart">
-            </div>
-        </div>
+	    
     </div>
 
     <div style="clear: both; padding-bottom: 10%;"></div>
@@ -189,13 +133,19 @@
     <button onclick="gobacktop()" class="top">▲</button>
 
     <footer class="footer">
-        <div>
-            <img class="footer1" src="assets/images/logo.png" width="150px">
-        </div>
+        <div style="clear: both;">     
+            <a href="https://www.facebook.com/profile.php?id=100076801934036"><img  src="assets/images/fb.png"></a>
+            <a href="https://www.instagram.com/potf_playalltogeterforever/"><img  src="assets/images/ig.png"></a>
+            <a href="mailto:s10944143@gmail.com"><img  src="assets/images/email.png"></a>
+            <p style="font-size: 25px; margin: -15px 5px;">人數：</p>
+      </div>
     </footer>
+    <div class="footer2">
+
+    </div>
 </body>
 
 </html>
 <script type="text/javascript" src="assets/js/login_switch.js"></script>
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
-<!--<script type="text/javascript" src="assets/js/commoditylist_strategy.js"></script>-->
+<script type="text/javascript" src="assets/js/commoditylist_strategy.js"></script>

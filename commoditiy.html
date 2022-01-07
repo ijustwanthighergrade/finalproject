@@ -10,12 +10,13 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <img src="assets/images/logo2.png" width="350px">       
-            <div class="h1">
-                <div class="login">
-                    <img src="assets/images/login.png" width="50px" id="myBtn">
-                    <img src="assets/images/車.png" width="50px">
+        <header id="header">
+            <div class="header">
+                <a href="index.html"><img src="assets/images/logo2.png" width="400px"></a>       
+                <div class="h1">
+                    <div class="login">
+                        <img src="assets/images/login.png"width="60px" id="myBtn">
+                        <a href="Cart.html"><img src="assets/images/車.png" width="60px"></a>
                 </div>       
                 <div class="search">       
                     <input class="search-bar" type="search" style="width:350px" >
@@ -24,33 +25,36 @@
             </div>
         </div>
     </header>
+    <div class="header1">
+
+    </div>
     <input type="checkbox" name="" id="sideMenu-active" />
     <div class="Menu">  
     <nav>
         <div class="btn2">
             <ul>
                 <p class="p1">主頁</p>
-                <li><a href="#" class="btn1" >首　　頁</a>
+                <li><a href="home.html" class="btn1" >首　　頁</a>
                 <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
-                <li><a href="#" class="btn1" >理　　念</a>
-                <li><a href="#" class="btn1" >關於我們</a>
-                </ul>
+                <li><a href="concept.html" class="btn1" >理　　念</a>
+                <li><a href="aboutus.html" class="btn1" >關於我們</a>
+            </ul>
             <ul>
             <p class="p1">種類</p>
-                <li><a href="#" class="btn1" >派　　對</a>
-                <li><a href="#" class="btn1" >陣　　營</a>
-                <li><a href="#" class="btn1" >策　　略</a>
-                <li><a href="#" class="btn1" >心　　機</a>
-                <li><a href="#" class="btn1" >卡　　牌</a>
-                <li><a href="#" class="btn1" >兒　　童</a>
-                <li><a href="#" class="btn1" >家　　庭</a>
-                <li><a href="#" class="btn1" >抽　　象</a>
+                <li><a href="commoditylist_party.html" class="btn1" >派　　對</a>
+                <li><a href="commoditylist_camp.html" class="btn1" >陣　　營</a>
+                <li><a href="commoditylist_strategy.html" class="btn1" >策　　略</a>
+                <li><a href="commoditylist_mind.html" class="btn1" >心　　機</a>
+                <li><a href="commoditylist_card.html" class="btn1" >卡　　牌</a>
+                <li><a href="commoditylist_child.html" class="btn1" >兒　　童</a>
+                <li><a href="commoditylist_family.html" class="btn1" >家　　庭</a>
+                <li><a href="commoditylist_abstract.html" class="btn1" >抽　　象</a>
             </ul>
             <ul>
             <p class="p1">我的</p>
-                <li><a href="personalinfor.html" class="btn1" >個人資訊</a>
-                <li><a href="#" class="btn1">購 物 車</a>
-            </ul>
+            <li><a href="personalinfor.html" class="btn1" >會員中心</a>
+                <li><a href="Cart.html" class="btn1">購 物 車</a>
+           </ul>
         </div>
     </nav>
     <label for="sideMenu-active">
@@ -93,24 +97,18 @@
     <div class="justtypeset"></div>
 
     <!--從此為主體-->
-    <div class="backtocommoposition"><a href="commoditiylist.html" class="backtocommo"><h1> <  回商品清單 </h1></a></div>
+	
+    <div class="backtocommoposition"><a href="commoditiylist.jsp" class="backtocommo"><h1> <  回商品清單 </h1></a></div>
     <div class="commo_content">
-        <div class="commo_pic"><!--引入圖片-->
+        <div class="<%out.print(rs.getString(6));%>"><!--引入圖片-->
             <div class="slideshow-container">
                 <div class="mySlides1">
-                <img src="assets/images/game/卡牌/榮耀之城.jpg" style="width:100%">
+                <img src="" style="width:100%">
                 </div>
             
                 <div class="mySlides1">
-                <img src="assets/images/game/策略/詭影尋蹤.jpg" style="width:100%">
-                </div>
-            
-                <div class="mySlides1">
-                <img src="assets/images/game/抽象/格格不入.jfif" style="width:100%"> 
-                </div>
-                <div class="mySlides1">
-                    <img src="assets/images/game/心機/阿瓦隆.webp" style="width:100%">
-                </div>
+                <img src="<%out.print(rs.getString(9));%>" style="width:100%">
+                </div>          
                 <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
@@ -121,20 +119,21 @@
                 <button class="w3-button demo" onclick="imgclick(3)">3</button> 
             </div>-->
         </div>
-        <form action="" class="commoform">
+        <form action="addcar.jsp" class="commoform" >
             <table>
-                <tr><h1>Commodity name</h1><td>平均評價： 4.5 ★</td><td>總評價數：</td><td>庫存：</td></tr> <!--引入商品名-->
+                <tr><h1></h1><td>平均評價： 4.5 ★</td><td>總評價數：</td><td>庫存：</td></tr> <!--引入商品名-->
                 <!--引入平均星等 總評價數 庫存量-->
                 <tr style="height: 30px;"></tr>
-                <tr><td><div >價格</div></td><td><div class="price" >$300</div></td></tr> <!--引入價格-->
+				<input type="hidden" value="<%out.print(rs.getString(1));%>" name="productid" >
+                <tr><td><div >價格</div></td><td><div class="price" ></div></td></tr> <!--引入價格-->
                 <tr><td> 數量</td><td class="howmuch" ><input class="price" type="button" value="-" onclick="">
-                <input type="text" class="piece price" value="0" name="" id="">
+                <input type="text" class="piece price" value="0" name="number" id="">
                 <input type="button" class="price" value="+" onclick=""></td>
                 </tr>
                 
             </table>
             
-            <div class="commobut1"><input type="button" class="butfunction" value="加到購物車"><!--加到購物車-->
+            <div class="commobut1"><input type="submit" class="butfunction" value="加到購物車" name=""><!--加到購物車-->
                 <input type="button" value="直接購買" class="butfunction"><!--直接購買--></div>
                 <div class="commobut2"><input type="button" value="加到最愛 ♥" class="butfunction"><!--加到最愛--></div>
         </form>
@@ -145,11 +144,7 @@
                 <li><div class="commotextbut ">商品說明</div> </li>
             </ul>
             
-            <div class="textintroframe show"> <!--引入簡介-->今晚要吃誰是一款合作遊戲，所有玩家遇上空難，流落荒島，你們會有多快就決定要吃人呢? 出於不明原因，你們的飛機墜落，一群倖存者被沖上了荒島。
-                為了逃出生天，你們必須蒐集資源，建造木筏，離開這鬼地方。但實物逐漸枯竭，神智也在消逝，越是努力求生，身邊的倖存者越顯得可口...
-                你們很清楚不是所有人都能活著逃出，只有強者能生存到最後。可是在肉體力量以外，你們還隱約感受到這裡有一股超自然的氣息一一靈魂的世界和物質世界有某到連接，使得兩者只有一線之隔。
-                若你們受飢餓驅使，吃掉別的倖存者，不但你們會陷入瘋狂，還會招來怨魂報復，用盡方法阻止你們離開...
-                
+            <div class="textintroframe show"> <!--引入簡介-->    
             </div>
             <div class="textintroframe"> <!--引入商品說明-->
                 適合年齡：4歲以上
@@ -204,10 +199,16 @@
     <button onclick="gobacktop()" class="top" >▲</button>
 
     <footer class="footer">
-        <div>       
-            <img class="footer1" src="assets/images/logo.png" width="150px" >
-        </div>
+        <div style="clear: both;">     
+            <a href="https://www.facebook.com/profile.php?id=100076801934036"><img  src="assets/images/fb.png"></a>
+            <a href="https://www.instagram.com/potf_playalltogeterforever/"><img  src="assets/images/ig.png"></a>
+            <a href="mailto:s10944143@gmail.com"><img  src="assets/images/email.png"></a>
+            <p style="font-size: 25px; margin: -15px 5px;">人數：</p>
+      </div>
     </footer>
+    <div class="footer2">
+
+    </div>
 </body>
 </html>
 

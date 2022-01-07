@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="assets/css/cart.css">
 </head>
 <body>
-    <header id="header">
+    <header>
         <div class="header">
-            <a href="index.html"><img src="assets/images/logo2.png" width="400px"></a>       
+            <img src="assets/images/logo2.png" width="350px">       
             <div class="h1">
                 <div class="login">
-                    <img src="assets/images/login.png"width="60px" id="myBtn">
-                    <a href="Cart.html"><img src="assets/images/車.png" width="60px"></a>
+                    <img src="assets/images/login.png" width="50px" id="myBtn">
+                    <img src="assets/images/車.png" width="50px">
                    <!-- <div class="logicon">LOGIN</div><div style="float: left;" >SIGNUP</div>
                     <div style="float: left;">Cart </div>-->
                 </div>       
@@ -33,26 +33,26 @@
         <div class="btn2">
             <ul>
                 <p class="p1">主頁</p>
-                <li><a href="home.html" class="btn1" >首　　頁</a>
+                <li><a href="#" class="btn1" >首　　頁</a>
                 <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
-                <li><a href="concept.html" class="btn1" >理　　念</a>
-                <li><a href="aboutus.html" class="btn1" >關於我們</a>
-            </ul>
+                <li><a href="#" class="btn1" >理　　念</a>
+                <li><a href="#" class="btn1" >關於我們</a>
+                </ul>
             <ul>
             <p class="p1">種類</p>
-            <li><a href="commoditylist_party.html" class="btn1" >派　　對</a>
-                <li><a href="commoditylist_camp.html" class="btn1" >陣　　營</a>
-                <li><a href="commoditylist_strategy.html" class="btn1" >策　　略</a>
-                <li><a href="commoditylist_mind.html" class="btn1" >心　　機</a>
-                <li><a href="commoditylist_card.html" class="btn1" >卡　　牌</a>
-                <li><a href="commoditylist_child.html" class="btn1" >兒　　童</a>
-                <li><a href="commoditylist_family.html" class="btn1" >家　　庭</a>
-                <li><a href="commoditylist_abstract.html" class="btn1" >抽　　象</a>
+                <li><a href="#" class="btn1" >派　　對</a>
+                <li><a href="#" class="btn1" >陣　　營</a>
+                <li><a href="#" class="btn1" >策　　略</a>
+                <li><a href="#" class="btn1" >心　　機</a>
+                <li><a href="#" class="btn1" >卡　　牌</a>
+                <li><a href="#" class="btn1" >兒　　童</a>
+                <li><a href="#" class="btn1" >家　　庭</a>
+                <li><a href="#" class="btn1" >抽　　象</a>
             </ul>
             <ul>
             <p class="p1">我的</p>
-            <li><a href="personalinfor.html" class="btn1" >會員中心</a>
-                <li><a href="Cart.html" class="btn1">購 物 車</a>
+                <li><a href="personalinfor.html" class="btn1" >個人資訊</a>
+                <li><a href="#" class="btn1">購 物 車</a>
             </ul>
         </div>
     </nav>
@@ -70,22 +70,22 @@
             <div class="justhidden"></div>
 
             <div class="loginframe canuseframe show">
-                <form name="form1" method="POST" action="check.jsp">
+                <form name="form1" method="POST" >
                     <div class="registerinput">
-                        <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
-                        <input type="password" placeholder="請輸入密碼" name="pwd" class="password"><br>
+                        <input type="text" class="account" placeholder="請輸入帳號" name="account_number"> <br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
                     </div>            <br>            
-                    <input type="submit" value="LogIn" class="butsubmit"><br>
+                    <input type="button" value="LogIn" class="butsubmit"><br>
                 </form>
             </div>
             <div class="registerframe canuseframe">
-                <form name="form2" method="POST" action="add.jsp">
+                <form name="form2" method="POST" action="assets/jsp/create_null.jsp">
                     <div class="registerinput">
                         <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
-                        <input type="text" name="id" placeholder="請輸入帳號"><br>
-                        <input type="password" placeholder="請輸入密碼" name="pwd" id="" class="password"><br>
+                        <input type="text" name="account_number" placeholder="請輸入帳號"><br>
+                        <input type="password" placeholder="請輸入密碼" name="password" id="" class="password"><br>
                         <input type="text" name="phone_number" placeholder="請輸入電話"><br>
-                        <input type="text" name="e_mail" placeholder="請輸入e-mail"><br>
+                        <input type="text" name="e-mail" placeholder="請輸入e-mail"><br>
                         <input type="text" name="address" placeholder="請輸入地址"><br>
                     </div><br>
                     <input type="submit" name="Submit" value="Apply" class="butsubmit">
@@ -107,15 +107,13 @@
             <div class="price commotext">單價</div>
             <div class=" commotext">數量</div>
             <div class="amount commotext">總額</div>
-            <div class="canceldiv">x</div>
             <!--<div class="commotext"><input type="button" value="X"></div><br><hr>取消按鈕 要改的話去js檔改-->
         </div>
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeE6jkRIfUrXrUYoIw-fbC2uAkyoPETIfmm_dLUoG8e0_M20A/formResponse" method="get" > <!--取消商品傳到後端-->
-			
-            <div class="putbuyin" id="buyList"><div id="brother"></div></div><!--cart.js會生出一堆購物車商品-->
-            <div id="Totalprice"></div><!--這塊丟總金額-->
+           
+            <div class="putbuyin" id="buyList"></div><!--cart.js會生出一堆購物車商品-->
+            <div id="Totalprice"><hr class="hr1"></div><!--這塊丟總金額-->
         </form>
-        <a href="commoditiylist.html" class="gobacka"><div class="gobackgoback">您的購物車已經沒有商品囉！ <br> 點我回商品頁選購</div> </a>
 
     </div>
         <div class="recommend" style="float: left;">
@@ -124,22 +122,17 @@
             </div>
         </div>
     
-    <button onclick="gobacktop()" class="top" >▲</button>
+
 
     <footer class="footer">
-        <div style="clear: both;">     
-            <a href="https://www.facebook.com/profile.php?id=100076801934036"><img  src="assets/images/fb.png"></a>
-            <a href="https://www.instagram.com/potf_playalltogeterforever/"><img  src="assets/images/ig.png"></a>
-            <a href="mailto:s10944143@gmail.com"><img  src="assets/images/email.png"></a>
-            <p style="font-size: 25px; margin: -15px 5px;">人數：</p>
-      </div>
+        <div>       
+            <img class="footer1" src="assets/images/logo.png" width="150px" >
+        </div>
     </footer>
-    <div class="footer2">
-    </div>
 </body>
 </html>
 <script type="text/javascript" src="assets/js/login_switch.js"></script>
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="assets/js/cart(1).js"></script>
+<script type="text/javascript" src="assets/js/cart.js"></script>
 
 
