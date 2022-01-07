@@ -5,7 +5,7 @@
     margin-bottom:5%;
     margin-left: 12%;
     padding-left: 3%;
-    border-left: solid darkslategray 10px;
+    border-left: solid rgb(0, 168, 168) 10px;
     color: white;
 }
 .bigtitle1:hover{
@@ -26,7 +26,7 @@
 
 }
 .cart:hover{
-    background-color: lightsteelblue;
+    background-color: rgba(176, 196, 222, 0.479);
     transition: 0.3s;
 }
 .example div{
@@ -38,13 +38,15 @@
     float: right;
     /*background-color: rgb(156, 148, 148);*/
     width: 25%;
+    color: white;
 }
 .tpc{
     width: 40%;
     border: none;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    color: crimson;
+    color: rgb(197, 0, 39);
+    text-shadow: rgb(255, 255, 255) 0 0 20px;
     background-color: inherit;
 }
 .putbuyin{
@@ -60,9 +62,9 @@
     /*padding-top: 9%;*/
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: white;
     appearance: none;
-    background-color: inherit;
+    background-color: unset;
     border: none;
 }
 .hr1{
@@ -91,7 +93,7 @@
 .commoname{
     width: 20%;
     appearance: none;
-    background-color: inherit;
+    background-color:unset;
     border: none;
     
 }
@@ -104,6 +106,9 @@
 .putcartimg img{
     width: 80%;
 }
+input{
+    color: white;
+}
 .check{
     padding: 3%;
     margin: 3%;
@@ -112,16 +117,21 @@
     width: 60%;
     height: auto;
     padding-top: 0;
-    background-color: rgb(208, 226, 213);
+    border: turquoise double 5px;
+    background-color: rgba(0, 189, 195, 0.575);
     padding-bottom: 15%;
     margin-bottom: 5%;
     animation: rightleft 0.5s ease-out ;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 30px rgb(192, 192, 192);
 }
 .check h1{    
     padding-top: 5%;
     font-size: 50px;
     margin: 0;
+    color: rgb(247, 255, 254);
+    text-shadow: rgb(0, 230, 207) 0 0 40px;
+    font-size: 72px;
+    padding-bottom:5%;
 }
 .submitbut{
     margin-top: 15%;
@@ -146,7 +156,7 @@
     margin-top: 7.3%;
 }
 .cancel:hover{
-    background-color: gainsboro;
+    background-color: rgba(128, 255, 206, 0.603);
 }
 .gobackgoback {
     width: 25%;
@@ -170,13 +180,14 @@
 
 }
 .canceldiv{
-    width: 3%;height: 100%;
+    width: 3%;
+    height: 100%;
     float: left;
     font-size: 25px;
     /*padding-top: 9%;*/
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: white;
     appearance: none;
     background-color: inherit;
     border: none;

@@ -1,0 +1,54 @@
+.buyerorder{
+    width: 70%;
+    height: 800px;
+    border: turquoise double 5px;
+    background-color: rgba(0, 189, 195, 0.575);
+    margin: 5% 15%;
+}
+h3{
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+.title{
+    color: rgb(247, 255, 254);
+    text-shadow: rgb(0, 230, 207) 0 0 40px;
+    font-size: 72px;
+}
+.order tr{
+    /*background-color: thistle;*/
+    height: 70px;
+}
+.order{
+    width: auto;
+    margin-left: 10% ;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+input{
+    height: 30px;
+}
+.pay input{
+    display: flexbox;
+    float: left;
+}
+#1{
+    width: 50%;
+}
+.but{
+    background-color: rgba(195, 195, 195, 0.486);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 25px;
+    border: white 3px solid;
+    height: auto;
+    margin-left: 30px;
+}
+.but:hover{
+    background-color: rgba(147, 64, 224, 0.575);
+}
+.buta{
+    height: 100px;
+    justify-content: space-evenly;
+}
