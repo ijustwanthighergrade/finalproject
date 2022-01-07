@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commodity</title>
+    <link rel="stylesheet" href="assets/css/commodity.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <header>
+        <header id="header">
+            <div class="header">
+                <a href="index.html"><img src="assets/images/logo2.png" width="400px"></a>       
+                <div class="h1">
+                    <div class="login">
+                        <img src="assets/images/login.png"width="60px" id="myBtn">
+                        <a href="Cart.html"><img src="assets/images/車.png" width="60px"></a>
+                </div>       
+                <div class="search">       
+                    <input class="search-bar" type="search" style="width:350px" >
+                    <input class="search-btn" type="button" value="搜尋">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header1">
+
+    </div>
+    <input type="checkbox" name="" id="sideMenu-active" />
+    <div class="Menu">  
+    <nav>
+        <div class="btn2">
+            <ul>
+                <p class="p1">主頁</p>
+                <li><a href="home.html" class="btn1" >首　　頁</a>
+                <li><a href="commoditiylist.html" class="btn1" >商　　品</a>
+                <li><a href="concept.html" class="btn1" >理　　念</a>
+                <li><a href="aboutus.html" class="btn1" >關於我們</a>
+            </ul>
+            <ul>
+            <p class="p1">種類</p>
+                <li><a href="commoditylist_party.html" class="btn1" >派　　對</a>
+                <li><a href="commoditylist_camp.html" class="btn1" >陣　　營</a>
+                <li><a href="commoditylist_strategy.html" class="btn1" >策　　略</a>
+                <li><a href="commoditylist_mind.html" class="btn1" >心　　機</a>
+                <li><a href="commoditylist_card.html" class="btn1" >卡　　牌</a>
+                <li><a href="commoditylist_child.html" class="btn1" >兒　　童</a>
+                <li><a href="commoditylist_family.html" class="btn1" >家　　庭</a>
+                <li><a href="commoditylist_abstract.html" class="btn1" >抽　　象</a>
+            </ul>
+            <ul>
+            <p class="p1">我的</p>
+            <li><a href="personalinfor.html" class="btn1" >會員中心</a>
+                <li><a href="Cart.html" class="btn1">購 物 車</a>
+           </ul>
+        </div>
+    </nav>
+    <label for="sideMenu-active">
+        <i class="fas fa-angle-right">≡</i>
+    </label>
+    </div>
+    <div class="content" id="Box">
+        <div class="log_content" > 
+            <ul class="butframe">
+                <li><div class="log_but subbut">LogIn</div></li>
+                <li><div class="register_but subbut">Sign Up</div></li>
+            </ul>           
+            <div class="justhidden"></div>
+
+            <div class="loginframe canuseframe show">
+                <form name="form1" method="POST" action="check.jsp">
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
+                        <input type="password" placeholder="請輸入密碼" name="pwd" class="password"><br>
+                    </div>            <br>            
+                    <input type="submit" value="LogIn" class="butsubmit"><br>
+                </form>
+            </div>
+            <div class="registerframe canuseframe">
+                <form name="form2" method="POST" action="add.jsp">
+                    <div class="registerinput">
+                        <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
+                        <input type="text" name="id" placeholder="請輸入帳號"><br>
+                        <input type="password" placeholder="請輸入密碼" name="pwd" id="" class="password"><br>
+                        <input type="text" name="phone_number" placeholder="請輸入電話"><br>
+                        <input type="text" name="e_mail" placeholder="請輸入e-mail"><br>
+                        <input type="text" name="address" placeholder="請輸入地址"><br>
+                    </div><br>
+                    <input type="submit" name="Submit" value="Apply" class="butsubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="justtypeset"></div>
+
+    <!--從此為主體-->
+	
+    <div class="backtocommoposition"><a href="commoditiylist.jsp" class="backtocommo"><h1> <  回商品清單 </h1></a></div>
+    <div class="commo_content">
+        <div class="<%out.print(rs.getString(6));%>"><!--引入圖片-->
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                <img src="assets/images/game/家庭/情書.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides1">
+                <img src="assets/images/game/家庭/情書2.jpg" style="width:100%">
+                </div>          
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+                
+           <!-- <div class="slidebutimg">
+                <button class="w3-button demo" onclick="imgclick(1)">1</button> 
+                <button class="w3-button demo" onclick="imgclick(2)">2</button> 
+                <button class="w3-button demo" onclick="imgclick(3)">3</button> 
+            </div>-->
+        </div>
+        <form action="addcar.jsp" class="commoform" >
+            <table>
+                <tr><h1>情書</h1><td>平均評價： 4.5 ★</td><td>總評價數：4</td><td>庫存：50</td></tr> <!--引入商品名-->
+                <!--引入平均星等 總評價數 庫存量-->
+                <tr style="height: 30px;"></tr>
+				<input type="hidden" value="<%out.print(rs.getString(1));%>" name="productid" >
+                <tr><td><div >價格</div></td><td><div class="price" >$100</div></td></tr> <!--引入價格-->
+                <tr><td> 數量</td><td class="howmuch" ><input class="price" type="button" value="-" onclick="">
+                <input type="text" class="piece price" value="0" name="number" id="">
+                <input type="button" class="price" value="+" onclick=""></td>
+                </tr>
+                
+            </table>
+            
+            <div class="commobut1"><input type="submit" class="butfunction" value="加到購物車" name=""><!--加到購物車-->
+                <input type="button" value="直接購買" class="butfunction"><!--直接購買--></div>
+                <div class="commobut2"><input type="button" value="加到最愛 ♥" class="butfunction"><!--加到最愛--></div>
+        </form>
+        <div style="clear: both;"></div>
+        <div class="commo_text">
+            <ul>
+                <li><div class="commotextbut ">商品簡介</div> </li>
+                <li><div class="commotextbut ">商品說明</div> </li>
+            </ul>
+            
+            <div class="textintroframe show"> <!--引入簡介-->    
+                情書(Love Letter)算是一款輕鬆小品的桌遊。規則機制很有趣，只有16張角色牌，每張牌有自己的能力可以牽制對手。遊戲背景是玩家想要追求公主，想要透過情書表達愛意，但必須透過公主身邊的人才能把情書傳遞給她。在經過數輪，玩家把手上的角色牌都打出後，最後持有的手牌最親近公主就獲勝。桌遊規則非常簡單，節奏也很明快，是個簡易上手的小型桌遊。
+            </div>
+            <div class="textintroframe"> <!--引入商品說明-->
+                適合年齡：4歲以上
+            </div>
+        </div>
+        <div class="commo_comme">
+            <div class="totalcomment">商品評論數( <span class="allcomment">4</span> )</div><!--span引入總評論數-->
+            <div class="customer">
+
+                <div class="putcomment" id="putincomment"><!--引入評論 在commodity1.js裡列印-->
+                </div>
+
+                <form action="" class="commentform">
+                    <div class="commentform1"><img src="assets/images/12.jpg" alt=""></div><!--引入使用者頭像-->
+                    
+                    <div class="commentform2"> 
+                        <div class="star_content">
+                            <span class="total-star">星級 ｜</span>
+                                <div class="howmuchstar"></div>
+                                <div class="howmuchstar"></div>
+                                <div class="howmuchstar"></div>
+                                <div class="howmuchstar"></div>
+                                <div class="howmuchstar"></div>
+                                <span class="stars">評分</span> <!--需要後端接星等數 變數為commodity1.js裡的starindex+1-->
+                        </div>     
+                        <div class="username">名字 ｜<input type="text"></div> <br>
+                        <div class="username">評論 ｜<textarea name="" id="" cols="60" rows="2"></textarea></div> 
+                        
+                        <input type="submit" value="送出" class="sucbut">
+                    </div>
+                     <div style="clear: both;"></div>
+                </form>
+            </div>
+            <div class="star">
+               <div class="avgstar">平均 <h1 style="float: right;"><span>4.5</span>★</h1> </div><!--span引入平均星等-->
+
+               <div class="totalstar">                                            <!--span要引入該星等的評論數-->
+                    <div class="starframe"><div class="star0 star1">1<br>★</div> <span class="staramount1">0</span></div> 
+                    <div class="starframe"><div class="star0 star2">2<br>★</div> <span class="staramount1">1</span></div> 
+                    <div class="starframe"><div class="star0 star3">3<br>★</div> <span class="staramount1">2</span></div>
+                    <div class="starframe"><div class="star0 star4">4<br>★</div> <span class="staramount1">3</span></div>
+                    <div class="starframe"><div class="star0 star5">5<br>★</div> <span class="staramount1">4</span></div>
+                </div>
+            </div>
+            
+        
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+        
+      
+    <button onclick="gobacktop()" class="top" >▲</button>
+
+    <footer class="footer">
+        <div style="clear: both;">     
+            <a href="https://www.facebook.com/profile.php?id=100076801934036"><img  src="assets/images/fb.png"></a>
+            <a href="https://www.instagram.com/potf_playalltogeterforever/"><img  src="assets/images/ig.png"></a>
+            <a href="mailto:s10944143@gmail.com"><img  src="assets/images/email.png"></a>
+            <p style="font-size: 25px; margin: -15px 5px;">人數：</p>
+      </div>
+    </footer>
+    <div class="footer2">
+
+    </div>
+</body>
+</html>
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/commodity1.js"></script>
+
+<script type="text/javascript" src="assets/js/login_switch.js"></script>
+<script type="text/javascript" src="assets/js/commodity.js"></script>
+
+
