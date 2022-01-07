@@ -55,12 +55,13 @@ var isShow1 = false;
         document.getElementById('10944222_2').style.display='none';
         document.getElementById('10944143_2').style.display='none';
         document.getElementById('10944243_2').style.display='none';
-        document.getElementById("r1").style.backgroundColor='#5B00AE';
+        document.getElementById("r1").style.backgroundColor='rgba(255, 38, 255, 0.692)';
         document.getElementById("r2").style.backgroundColor='';
         document.getElementById("r3").style.backgroundColor='';
         document.getElementById("r4").style.backgroundColor='';
-        document.getElementById("about2").style.backgroundColor='#5B00AE';
-        document.getElementById("r1").style.backgroundColor='#5B00AE';
+        document.getElementById("about2").style.backgroundColor='rgba(255, 38, 255, 0.692)';
+        document.getElementById("us").style.display='block';
+        document.getElementById("aboutus").style.display='none';
     } 
     function s2() {
      
@@ -68,22 +69,26 @@ var isShow1 = false;
         document.getElementById('10944122_2').style.display='none'; 
         document.getElementById('10944243_2').style.display='none';
         document.getElementById('10944222_2').style.display='none';      
-        document.getElementById("r2").style.backgroundColor='#019858';
+        document.getElementById("r2").style.backgroundColor='rgba(56, 56, 255, 0.7)';
         document.getElementById("r1").style.backgroundColor='';
         document.getElementById("r3").style.backgroundColor='';
         document.getElementById("r4").style.backgroundColor='';
-        document.getElementById("about2").style.backgroundColor='#019858';
+        document.getElementById("about2").style.backgroundColor='rgba(56, 56, 255, 0.7)';
+        document.getElementById("us").style.display='block';
+        document.getElementById("aboutus").style.display='none';
     }
     function s3() {       
         document.getElementById('10944222_2').style.display='';
         document.getElementById('10944122_2').style.display='none';
         document.getElementById('10944143_2').style.display='none';
         document.getElementById('10944243_2').style.display='none';       
-        document.getElementById("r3").style.backgroundColor='#0000C6';
+        document.getElementById("r3").style.backgroundColor='rgba(255, 25, 25, 0.705)';
         document.getElementById("r1").style.backgroundColor='';
         document.getElementById("r2").style.backgroundColor='';
         document.getElementById("r4").style.backgroundColor='';
-        document.getElementById("about2").style.backgroundColor='#0000C6';
+        document.getElementById("about2").style.backgroundColor='rgba(255, 25, 25, 0.705)';
+        document.getElementById("us").style.display='block';
+        document.getElementById("aboutus").style.display='none';
     }
     function s4() {
      
@@ -91,10 +96,12 @@ var isShow1 = false;
         document.getElementById('10944222_2').style.display='none';
         document.getElementById('10944122_2').style.display='none';
         document.getElementById('10944143_2').style.display='none';
-        document.getElementById("r4").style.backgroundColor='#930000';
+        document.getElementById("r4").style.backgroundColor='rgba(38, 255, 147, 0.7)';
         document.getElementById("r1").style.backgroundColor=''; 
         document.getElementById("r2").style.backgroundColor='';
         document.getElementById("r3").style.backgroundColor=''; 
-        document.getElementById("about2").style.backgroundColor='#930000';  
+        document.getElementById("about2").style.backgroundColor='rgba(38, 255, 147, 0.7)';  
+        document.getElementById("us").style.display='block';
+        document.getElementById("aboutus").style.display='none';
     }
 

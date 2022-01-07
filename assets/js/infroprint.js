@@ -304,7 +304,7 @@ var buyArry = [
         state : "待取貨"
     },
 ]; 
-/*
+
 PrintBuyList();
 function PrintBuyList() {
 var BuyList = document.querySelector("#putbuylist");
@@ -321,7 +321,7 @@ buyArry.forEach(function (item) {
     BuyList.appendChild(newDiv);
 });
 }
-/*
+
 PrintHistoryComment();
 function PrintHistoryComment() {
 var hisList = document.querySelector("#puthistorycomment");
@@ -338,8 +338,8 @@ commentArry.forEach(function (item) {
     hisList.appendChild(newDiv);
 });
 }
-*/
-/*
+
+
 PrintLoveCommodity();
 function PrintLoveCommodity() {
 var loveList = document.querySelector("#putlovecommodity");
@@ -356,4 +356,4 @@ loveArry.forEach(function (item) {
                         </div>`;
     loveList.appendChild(newDiv);
 });
-}*/
+}

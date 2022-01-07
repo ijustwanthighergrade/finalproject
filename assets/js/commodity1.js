@@ -2,28 +2,28 @@ var itemArry = [
     {
         img: "Testimg.jpg",
         username:"我會飛ㄟ",
-        usercomment:"還行拉",
+        usercomment:"行ㄅ",
         userstar:4,
     },
     {
         
         img: "Testimg.jpg",
-        username:"我會飛ㄟ",
+        username:"哭阿",
         usercomment:"還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉還行拉",
         userstar:4,
     },
     {
         
         img: "Testimg.jpg",
-        username:"我會飛ㄟ",
-        usercomment:"還行拉",
+        username:"菲哥",
+        usercomment:"哭阿怎麼這麼難",
         userstar:4,
     },
     {
         
         img: "Testimg.jpg",
-        username:"我會飛ㄟ",
-        usercomment:"還行拉",
+        username:"先不要",
+        usercomment:"嗚嗚嗚嗚嗚嗚",
         userstar:4,
     }
 ];/*放評論資料*/ 
@@ -31,7 +31,7 @@ var itemArry = [
 PrintcommentList();
 /*列印評論*/ 
 function PrintcommentList() {
-var itemList = document.querySelector("#putincomment");
+let itemList = document.querySelector("#putincomment");
 itemArry.forEach(function (item) {
     let newDiv = document.createElement("div");
     newDiv.innerHTML = `<div class="comment1">
@@ -152,3 +152,4 @@ var allcomment = $(".allcomment").attr("value");/*document.getElementsByClassNam
 
 star1.style.height = (star1 / allcomment) +"%";
 star2.style.height = star2*1 / allcomment*1 +"%";
+
