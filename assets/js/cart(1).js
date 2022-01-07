@@ -122,7 +122,7 @@ function TotalPrice() {
     tp.innerHTML = `<hr style="clear:both;"><div class="totalframe">
                         <div>總金額：<input type="text" class="tpc" name="totalprice" value="$${sumall}" id="totalprice" disabled="disabled"></div>
                         <div>總件數：<input type="text" class="tpc" name="totalmuch" value="${howmuch}" id="totalmuch" disabled="disabled"></div>
-                        <div><input type="Submit" value="確認送出" class="submitbut" onclick="pushdata()"></div>
+                        <a href="buyer.html"><div><input type="Submit" value="確認送出" class="submitbut" onclick=""></div></a>
                     </div>`;
     if (howmuch == 0) {
         alert("您的購物車已無商品");
@@ -133,36 +133,3 @@ function TotalPrice() {
 }
 
 /*<div>取消數：<input type="text" name="" value="${howmuchcancel}" id="" disabled="disabled"></div>*/
-
-
-var pushdata = function () {
-
-    var title = $('#commodityname').val() || '未填寫'; //商品名
-
-    // 電子郵件
-    var howmuch = $('name=["much"]').val() || '未填寫';
-
-    //var howmuch = $('.much').val() || '未填寫'; //商品數量
-
-    var totalprice = $('#totalprice').val() || '未填寫'; //總金額
-
-    var totalmuch = $('#totalmuch').val() || '未填寫'; //總商品數量
-
-    // post
-    var data = {
-        'entry.1874703059': title,
-        'entry.807229909': howmuch,
-        'entry.617986349': totalprice,
-        'entry.1181539638': totalmuch,
-    };
-    $.ajax({
-        type: 'POST',
-        url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeE6jkRIfUrXrUYoIw-fbC2uAkyoPETIfmm_dLUoG8e0_M20A/formResponse',
-        data: data,
-        contentType: 'application/json',
-        dataType: 'jsonp',
-        complete: function () {
-            alert('資料已送出！');
-        }
-    });
-};
