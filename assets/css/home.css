@@ -82,11 +82,12 @@
     margin: 30px auto;
     margin-top: 5%;
     background-color: rgb(240, 223, 223);
-    border: 15px solid rgb(141, 117, 117);
-    border-bottom: 50px solid rgb(141, 117, 117);
-    box-shadow: 5px 0 10px rgba(23, 23, 54, 0.6);
+    border: 15px solid rgba(22, 28, 109, 0.8);
+    border-bottom: 50px solid rgb(22, 28, 109, 0.8);
+    box-shadow: 0px 0 30px rgb(255, 255, 255);
     overflow: hidden;
     border-radius: 1%;
+    opacity: 0.9;
 }
    
 #advertising .parent{
@@ -194,11 +195,10 @@ div :hover{
 
 
 .mar{
-    background-color: rgb(138, 170, 144);
+    background-color: rgb(109, 218, 194,0.6);
     color: white;
-    opacity:0.8;
     font-style: italic;
-    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+    box-shadow: 0px 0 10px rgba(255, 255, 255);
     height: 38px;
     font-size: 32px;
 }
@@ -208,8 +208,8 @@ div :hover{
     width: 55%;
     height: 400px;
     /*border: 10px solid rgb(141, 117, 117);*/
-    border-top: 80px solid rgb(141, 117, 117);
-    background-color: rgb(185, 185, 185);
+    border-top: 80px solid rgb(18, 24, 105,0.8);
+    background-color: rgba(191, 187, 255, 0.719);
     margin: 30px auto;
     box-shadow: 5px 0 10px rgba(23, 23, 54, 0.6);
     position: relative;
@@ -221,7 +221,7 @@ div :hover{
     top: 85px;
     left: 69%;
     z-index: 10;
-    background-color: rgb(141, 117, 117);
+    background-color: rgba(18, 24, 105, 0.5);
     color: white;
     padding: 10px;
     font-size: 32px;
@@ -283,7 +283,7 @@ div :hover{
     width: 55%;
     height: 20%;
     padding-bottom: 1%;
-    background-color: rgb(185, 185, 185);
+    background-color: rgba(52, 61, 180, 0.8);
 }
 .cateul{
     list-style: none;
@@ -334,6 +334,7 @@ div :hover{
     text-align: center;
     font-size: 42px;
     color: white;
+    font-weight: bold;
 }
 
 .name-price{
