@@ -20,9 +20,11 @@
     margin-left: 3%;
     padding-left: 3%;
     border-left: solid darkslategray 10px;
-    top: 250px;
+    top: 200px;
     position: absolute;
     left: -10%;
+    transition: 0.2s ease-in-out;
+    text-shadow: rgb(0, 247, 255) 0 0 40px;
 }
 .acti1{
     padding: 1%;
@@ -37,6 +39,8 @@
     font-size: 60px;
     margin-left: 5%;
     margin-top: 2%;
+    transition: 0.2s ease-in-out;
+    text-shadow: rgb(0, 247, 255) 0 0 40px;
 }
 .myinforimg{
     float: left;
@@ -74,7 +78,7 @@
     width: 17%;    
     float: left;
     /*background-color: indianred;*/
-    border-right:solid 3px darkslategrey;
+    border-right:solid 3px rgb(0, 167, 167);
     margin: 2%;
     font-weight: bold;
     padding-bottom: 1%;
@@ -93,15 +97,16 @@
     padding: 1%;
     border-radius: 10px;
     border: none;
-    background-color: rgba(95, 158, 160, 0.664);
+    background-color: rgba(0, 247, 255, 0.664);
     font-size: 25px;
     margin-left: 20%;
     height: 50px;
     margin-top: 5%;
     margin-bottom: 3%;
+    color: white;
 }
 .butchange:hover{
-    background-color: rgba(78, 129, 131, 0.664);
+    background-color: rgba(0, 179, 185, 0.664);
 }
 .inforframe{
     animation: opacity 0.4s ease-in-out;
@@ -111,11 +116,12 @@
     width: 72%;
     height:55% ;
     padding: 4%;
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.603);
     float: left;
     font-size: 25px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    color: white;
 
 }
 .inforbutlist{
@@ -125,7 +131,7 @@
     width: 12%;
     height: 55%;
     padding: 4%;
-    background-color: rgb(90, 179, 164);
+    background-color: rgba(0, 255, 234, 0.541);
     float: left;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -161,6 +167,7 @@
     background-color: cadetblue;
     overflow-y: scroll;
     border-radius: 10px;
+    color: rgb(0, 59, 53);
 }
 .write{
     text-decoration: none;

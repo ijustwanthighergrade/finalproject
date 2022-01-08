@@ -64,7 +64,7 @@
 }
 
 .form1{
-    background-color: rgb(163, 163, 163);
+    background-color: rgba(163, 163, 163, 0.349);
     width: 35%;
     height: 55%;
     margin: 20% 3%;
@@ -78,6 +78,7 @@
     margin-top: 25%;
     left: 5%;
     position: absolute;
+    animation: leftright 0.5s ease;
 
 }
 .form1 input{
@@ -119,6 +120,7 @@
     border-radius: 10%;
     position: relative;
     margin-bottom: 5%;
+    animation: leftright 0.5s ease;
 }
 .button1{
     text-align:left; 
