@@ -11,8 +11,8 @@
 .title{
     margin-left: -5%;
     font-size: 88px;
-    color: rgb(0, 0, 0);
-    text-shadow: 0.1em 0.1em rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
+    text-shadow:0 0  40px rgb(4, 156, 93);
     background-color: rgba(0, 255, 255, 0.7);  
 
     width: 100px;
