@@ -70,7 +70,7 @@
             <div class="justhidden"></div>
 
             <div class="loginframe canuseframe show">
-                <form name="form1" method="POST" action="check.jsp">
+                <form name="form1" method="POST" action="check.html">
                     <div class="registerinput">
                         <input type="text" class="account" placeholder="請輸入帳號" name="id"> <br>
                         <input type="password" placeholder="請輸入密碼" name="pwd" class="password"><br>
@@ -79,7 +79,7 @@
                 </form>
             </div>
             <div class="registerframe canuseframe">
-                <form name="form2" method="POST" action="add.jsp">
+                <form name="form2" method="POST" action="add.html">
                     <div class="registerinput">
                         <input type="text" class="account" placeholder="請輸入姓名" name="name"> <br>
                         <input type="text" name="id" placeholder="請輸入帳號"><br>
@@ -98,16 +98,16 @@
 
     <!--從此為主體-->
 	
-    <div class="backtocommoposition"><a href="commoditiylist.jsp" class="backtocommo"><h1> <  回商品清單 </h1></a></div>
+    <div class="backtocommoposition"><a href="commoditiylist.html" class="backtocommo"><h1> <  回商品清單 </h1></a></div>
     <div class="commo_content">
         <div class="<%out.print(rs.getString(6));%>"><!--引入圖片-->
             <div class="slideshow-container">
                 <div class="mySlides1">
-                <img src="" style="width:100%">
+                <img src="assets/images/game/心機/印加寶藏.jpg" style="width:100%">
                 </div>
             
                 <div class="mySlides1">
-                <img src="<%out.print(rs.getString(9));%>" style="width:100%">
+                <img src=" " style="width:100%">
                 </div>          
                 <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -119,13 +119,13 @@
                 <button class="w3-button demo" onclick="imgclick(3)">3</button> 
             </div>-->
         </div>
-        <form action="addcar.jsp" class="commoform" >
+        <form action="addcar.html" class="commoform" >
             <table>
-                <tr><h1></h1><td>平均評價： 4.5 ★</td><td>總評價數：</td><td>庫存：</td></tr> <!--引入商品名-->
+                <tr><h1>印加寶藏</h1><td>平均評價： 4.5 ★</td><td>總評價數：3</td><td>庫存：50</td></tr> <!--引入商品名-->
                 <!--引入平均星等 總評價數 庫存量-->
                 <tr style="height: 30px;"></tr>
 				<input type="hidden" value="<%out.print(rs.getString(1));%>" name="productid" >
-                <tr><td><div >價格</div></td><td><div class="price" ></div></td></tr> <!--引入價格-->
+                <tr><td><div >價格</div></td><td><div class="price" >$100 </div></td></tr> <!--引入價格-->
                 <tr><td> 數量</td><td class="howmuch" ><input class="price" type="button" value="-" onclick="">
                 <input type="text" class="piece price" value="0" name="number" id="">
                 <input type="button" class="price" value="+" onclick=""></td>
@@ -145,6 +145,7 @@
             </ul>
             
             <div class="textintroframe show"> <!--引入簡介-->    
+
             </div>
             <div class="textintroframe"> <!--引入商品說明-->
                 適合年齡：4歲以上
