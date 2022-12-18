@@ -175,30 +175,3 @@ create table vactivity(
     FOREIGN KEY(vaAccount) REFERENCES vip(vAccount),
     FOREIGN KEY(vaID) REFERENCES activity(aID)
 );
-
-
-
-#會員
-select * from vip;
-#簽到
-select * from sign;
-#題目
-select * from exam;
-#帳本與碳權轉移
-select * from trade;
-select * from carbon;
-#道具與持有道具
-select * from item;
-select * from back;
-#圖鑑與持有圖鑑
-select * from photo;
-select * from vphoto;
-#植物與持有植物
-select * from flower;
-select * from vflower;
-#商店與交易紀錄
-select * from goods;
-select * from tgoods;
-#活動與參加紀錄
-select * from activity;
-select * from vactivity;
